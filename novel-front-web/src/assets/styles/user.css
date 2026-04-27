@@ -1,0 +1,4 @@
+@charset "utf-8";
+.icon_name, .icon_key, .icon_code { width:312px; padding-left:36px; background:url(../images/icon_user.png) no-repeat 13px 13px }
+.no_comment { background:url(../images/no_comment.png) no-repeat center 80px }
+.pl_bar .reply { padding-left: 22px; background: url(../images/icon_reply.png) no-repeat 0 2px }

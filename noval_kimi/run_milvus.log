@@ -1,0 +1,788 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< io.github.xxyopen:novel >-----------------------
+[INFO] Building novel 3.5.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:3.3.0:run (default-cli) > test-compile @ novel >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ novel ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 35 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ novel ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ novel ---
+[INFO] Copying 7 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ novel ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:3.3.0:run (default-cli) < test-compile @ novel <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:3.3.0:run (default-cli) @ novel ---
+[INFO] Attaching agents: []
+13:43:25,730 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.6
+13:43:25,734 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - Here is a list of configurators discovered as a service, by rank: 
+13:43:25,734 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+13:43:25,734 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+13:43:25,734 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+13:43:25,745 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 0 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+13:43:25,745 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+13:43:25,745 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+13:43:25,749 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+13:43:25,750 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+13:43:25,750 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 5 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+13:43:25,750 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+13:43:25,750 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+13:43:25,751 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+13:43:25,751 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.xml]
+13:43:25,751 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+13:43:25,751 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - Trying to configure with ch.qos.logback.classic.BasicConfigurator
+13:43:25,752 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - Constructed configurator of type class ch.qos.logback.classic.BasicConfigurator
+13:43:25,752 |-INFO in ch.qos.logback.classic.BasicConfigurator@1a69561c - Setting up default configuration.
+13:43:25,770 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - ch.qos.logback.classic.BasicConfigurator.configure() call lasted 18 milliseconds. ExecutionStatus=NEUTRAL
+13:43:26,367 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word clr with class [org.springframework.boot.logging.logback.ColorConverter]
+13:43:26,367 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wex with class [org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter]
+13:43:26,367 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wEx with class [org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter]
+13:43:26,409 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+13:43:26,409 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+13:43:26,413 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+13:43:26,431 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE]
+13:43:26,431 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+13:43:26,441 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1504321715 - No compression will be used
+13:43:26,441 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1504321715 - Will use the pattern logs/debug.%d.%i.log for the active file
+13:43:26,452 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@363f6148 - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/debug.%d.%i.log'.
+13:43:26,452 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@363f6148 - Roll-over at midnight.
+13:43:26,458 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@363f6148 - Setting initial period to 2026-04-18T05:41:51.982Z
+13:43:26,458 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@363f6148 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+13:43:26,458 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@363f6148 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+13:43:26,460 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+13:43:26,462 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: logs/novel.log
+13:43:26,462 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [logs/novel.log]
+13:43:26,463 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+13:43:26,463 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4b21844c - Propagating INFO level on Logger[ROOT] onto the JUL framework
+13:43:26,464 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+13:43:26,464 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to Logger[ROOT]
+13:43:26,464 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [io.github.xxyopen] to DEBUG
+13:43:26,464 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4b21844c - Propagating DEBUG level on Logger[io.github.xxyopen] onto the JUL framework
+13:43:26,465 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [io.github.xxyopen] to false
+13:43:26,465 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[io.github.xxyopen]
+13:43:26,465 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to Logger[io.github.xxyopen]
+13:43:26,465 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.zalando.logbook] to TRACE
+13:43:26,465 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4b21844c - Propagating TRACE level on Logger[org.zalando.logbook] onto the JUL framework
+13:43:26,465 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.zalando.logbook] to false
+13:43:26,465 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[org.zalando.logbook]
+13:43:26,465 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to Logger[org.zalando.logbook]
+13:43:26,465 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@1b28f282 - End of configuration.
+13:43:26,465 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@138fe6ec - Registering current configuration as safe fallback point
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2026-04-18 13:43:26.496  INFO 42020 --- [kground-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 8.0.1.Final
+2026-04-18 13:43:26.559  INFO 42020 --- [           main] i.github.xxyopen.novel.NovelApplication  : Starting NovelApplication using Java 17.0.16 with PID 42020 (C:\Users\wcc\Project\noval_kimi\target\classes started by wcc in C:\Users\wcc\Project\noval_kimi)
+2026-04-18 13:43:26.560 DEBUG 42020 --- [           main] i.github.xxyopen.novel.NovelApplication  : Running with Spring Boot v3.3.0, Spring v6.1.8
+2026-04-18 13:43:26.561  INFO 42020 --- [           main] i.github.xxyopen.novel.NovelApplication  : The following 1 profile is active: "dev"
+2026-04-18 13:43:28.566  INFO 42020 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-18 13:43:28.569  INFO 42020 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2026-04-18 13:43:28.598  INFO 42020 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 Elasticsearch repository interfaces.
+2026-04-18 13:43:28.602  INFO 42020 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-18 13:43:28.603  INFO 42020 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2026-04-18 13:43:28.608  INFO 42020 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2026-04-18 13:43:28.620  INFO 42020 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-18 13:43:28.621  INFO 42020 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-18 13:43:28.635  INFO 42020 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2026-04-18 13:43:30.131  INFO 42020 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8888 (http)
+2026-04-18 13:43:30.146  INFO 42020 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8888"]
+2026-04-18 13:43:30.149  INFO 42020 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-18 13:43:30.149  INFO 42020 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-04-18 13:43:30.262  INFO 42020 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-18 13:43:30.263  INFO 42020 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3472 ms
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.6 
+2026-04-18 13:43:32.722  INFO 42020 --- [           main] org.redisson.Version                     : Redisson 3.19.1
+2026-04-18 13:43:33.044  INFO 42020 --- [isson-netty-2-6] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2026-04-18 13:43:33.088  INFO 42020 --- [sson-netty-2-19] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2026-04-18 13:43:33.385  INFO 42020 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-18 13:43:33.650  INFO 42020 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@196519dd
+2026-04-18 13:43:33.652  INFO 42020 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-18 13:43:33.658 DEBUG 42020 --- [           main] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 13:43:33.697 DEBUG 42020 --- [           main] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 13:43:33.742 DEBUG 42020 --- [           main] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 13:43:33.748  INFO 42020 --- [           main] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+INFO: Sentinel log output type is: file
+INFO: Sentinel log charset is: utf-8
+INFO: Sentinel log base directory is: C:\Users\wcc\logs\csp\
+INFO: Sentinel log name use pid is: false
+INFO: Sentinel log level is: INFO
+2026-04-18 13:43:34.262  INFO 42020 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-04-18 13:43:34.438  INFO 42020 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure EndpointRequestMatcher includes=[*], excludes=[], includeLinks=true with [org.springframework.security.web.session.DisableEncodeUrlFilter@3e4dabcb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b24fcba, org.springframework.security.web.context.SecurityContextHolderFilter@15d6f0e1, org.springframework.security.web.header.HeaderWriterFilter@1638fa8b, org.springframework.web.filter.CorsFilter@4d4bac56, org.springframework.security.web.authentication.logout.LogoutFilter@11101f62, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4f1fb8fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58965e17, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@204bd52d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59f2a9e9, org.springframework.security.web.access.ExceptionTranslationFilter@40eb85e9, org.springframework.security.web.access.intercept.AuthorizationFilter@70edffdb]
+2026-04-18 13:43:36.341  INFO 42020 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2026-04-18 13:43:36.607  INFO 42020 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8888"]
+2026-04-18 13:43:36.615  INFO 42020 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8888 (http) with context path '/'
+2026-04-18 13:43:36.619  INFO 42020 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:43:36.665  INFO 42020 --- [           main] o.s.a.r.l.SimpleMessageListenerContainer : Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:43:36.677  INFO 42020 --- [ntContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:43:36.695  INFO 42020 --- [           main] i.github.xxyopen.novel.NovelApplication  : Started NovelApplication in 10.779 seconds (process running for 11.374)
+2026-04-18 13:43:36.704 DEBUG 42020 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 13:43:36.705 DEBUG 42020 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 13:43:36.708 DEBUG 42020 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 13:43:36.709  INFO 42020 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 13:43:36.750  INFO 42020 --- [           main] i.github.xxyopen.novel.NovelApplication  : 加载了如下缓存管理器：
+2026-04-18 13:43:36.751  INFO 42020 --- [           main] i.github.xxyopen.novel.NovelApplication  : caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2026-04-18 13:43:36.751  INFO 42020 --- [           main] i.github.xxyopen.novel.NovelApplication  : 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2026-04-18 13:43:36.751  INFO 42020 --- [           main] i.github.xxyopen.novel.NovelApplication  : redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2026-04-18 13:43:36.752  INFO 42020 --- [           main] i.github.xxyopen.novel.NovelApplication  : 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2026-04-18 13:43:36.752  INFO 42020 --- [           main] i.github.xxyopen.novel.NovelApplication  : 创建连接池...
+2026-04-18 13:43:36.752  INFO 42020 --- [           main] i.github.xxyopen.novel.NovelApplication  : 最小空闲连接数：10
+2026-04-18 13:43:36.752  INFO 42020 --- [           main] i.github.xxyopen.novel.NovelApplication  : 最大连接数：10
+2026-04-18 13:43:36.752  INFO 42020 --- [           main] i.github.xxyopen.novel.NovelApplication  : 创建连接池完成.
+2026-04-18 13:43:36.752  INFO 42020 --- [           main] i.github.xxyopen.novel.NovelApplication  : 数据库：MySQL
+2026-04-18 13:43:36.752  INFO 42020 --- [           main] i.github.xxyopen.novel.NovelApplication  : 数据库版本：8.4.7
+2026-04-18 13:43:41.702  WARN 42020 --- [ntContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:43:41.706  INFO 42020 --- [ntContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5d1206e0: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:43:41.708  INFO 42020 --- [ntContainer#0-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:43:46.727  WARN 42020 --- [ntContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:43:46.728  INFO 42020 --- [ntContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@231fb7cc: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:43:46.730  INFO 42020 --- [ntContainer#0-3] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:43:51.753  WARN 42020 --- [ntContainer#0-3] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:43:51.753  INFO 42020 --- [ntContainer#0-3] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3b72211f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:43:51.755  INFO 42020 --- [ntContainer#0-4] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:43:56.776  WARN 42020 --- [ntContainer#0-4] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:43:56.776  INFO 42020 --- [ntContainer#0-4] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@26a0542f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:43:56.778  INFO 42020 --- [ntContainer#0-5] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:44:01.799  WARN 42020 --- [ntContainer#0-5] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:44:01.799  INFO 42020 --- [ntContainer#0-5] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1032fef3: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:44:01.801  INFO 42020 --- [ntContainer#0-6] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:44:06.816  WARN 42020 --- [ntContainer#0-6] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:44:06.816  INFO 42020 --- [ntContainer#0-6] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@268b0732: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:44:06.818  INFO 42020 --- [ntContainer#0-7] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:44:11.839  WARN 42020 --- [ntContainer#0-7] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:44:11.840  INFO 42020 --- [ntContainer#0-7] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@56e461bb: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:44:11.841  INFO 42020 --- [ntContainer#0-8] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:44:16.863  WARN 42020 --- [ntContainer#0-8] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:44:16.863  INFO 42020 --- [ntContainer#0-8] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5da3fab9: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:44:16.864  INFO 42020 --- [ntContainer#0-9] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:44:21.896  WARN 42020 --- [ntContainer#0-9] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:44:21.896  INFO 42020 --- [ntContainer#0-9] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6f0909b0: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:44:21.898  INFO 42020 --- [tContainer#0-10] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:44:26.919  WARN 42020 --- [tContainer#0-10] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:44:26.920  INFO 42020 --- [tContainer#0-10] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@a9e9ac6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:44:26.921  INFO 42020 --- [tContainer#0-11] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:44:31.939  WARN 42020 --- [tContainer#0-11] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:44:31.940  INFO 42020 --- [tContainer#0-11] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@76563be4: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:44:31.942  INFO 42020 --- [tContainer#0-12] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:44:36.964  WARN 42020 --- [tContainer#0-12] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:44:36.964  INFO 42020 --- [tContainer#0-12] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@22663058: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:44:36.966  INFO 42020 --- [tContainer#0-13] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:44:41.977  WARN 42020 --- [tContainer#0-13] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:44:41.977  INFO 42020 --- [tContainer#0-13] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6dedb8bb: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:44:41.978  INFO 42020 --- [tContainer#0-14] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:44:47.004  WARN 42020 --- [tContainer#0-14] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:44:47.004  INFO 42020 --- [tContainer#0-14] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@14a6c93c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:44:47.005  INFO 42020 --- [tContainer#0-15] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:44:52.025  WARN 42020 --- [tContainer#0-15] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:44:52.025  INFO 42020 --- [tContainer#0-15] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6124cbe8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:44:52.027  INFO 42020 --- [tContainer#0-16] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:44:57.048  WARN 42020 --- [tContainer#0-16] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:44:57.048  INFO 42020 --- [tContainer#0-16] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@72be48cb: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:44:57.049  INFO 42020 --- [tContainer#0-17] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:45:02.070  WARN 42020 --- [tContainer#0-17] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:45:02.070  INFO 42020 --- [tContainer#0-17] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@31e8756f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:45:02.072  INFO 42020 --- [tContainer#0-18] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:45:07.092  WARN 42020 --- [tContainer#0-18] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:45:07.093  INFO 42020 --- [tContainer#0-18] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@d490a8f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:45:07.094  INFO 42020 --- [tContainer#0-19] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:45:12.114  WARN 42020 --- [tContainer#0-19] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:45:12.114  INFO 42020 --- [tContainer#0-19] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@557c5ae6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:45:12.116  INFO 42020 --- [tContainer#0-20] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:45:17.125  WARN 42020 --- [tContainer#0-20] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:45:17.126  INFO 42020 --- [tContainer#0-20] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1bd861a0: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:45:17.127  INFO 42020 --- [tContainer#0-21] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:45:22.147  WARN 42020 --- [tContainer#0-21] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:45:22.147  INFO 42020 --- [tContainer#0-21] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@593580b4: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:45:22.149  INFO 42020 --- [tContainer#0-22] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:45:27.169  WARN 42020 --- [tContainer#0-22] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:45:27.170  INFO 42020 --- [tContainer#0-22] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1a3a5cef: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:45:27.172  INFO 42020 --- [tContainer#0-23] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:45:32.189  WARN 42020 --- [tContainer#0-23] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:45:32.189  INFO 42020 --- [tContainer#0-23] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3be1331d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:45:32.191  INFO 42020 --- [tContainer#0-24] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:45:37.210  WARN 42020 --- [tContainer#0-24] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:45:37.210  INFO 42020 --- [tContainer#0-24] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@7989253c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:45:37.212  INFO 42020 --- [tContainer#0-25] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:45:42.224  WARN 42020 --- [tContainer#0-25] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:45:42.225  INFO 42020 --- [tContainer#0-25] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@989a96f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:45:42.226  INFO 42020 --- [tContainer#0-26] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:45:47.238  WARN 42020 --- [tContainer#0-26] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:45:47.239  INFO 42020 --- [tContainer#0-26] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@507908da: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:45:47.241  INFO 42020 --- [tContainer#0-27] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:45:52.248  WARN 42020 --- [tContainer#0-27] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:45:52.248  INFO 42020 --- [tContainer#0-27] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6b6f046a: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:45:52.250  INFO 42020 --- [tContainer#0-28] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:45:57.270  WARN 42020 --- [tContainer#0-28] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:45:57.270  INFO 42020 --- [tContainer#0-28] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@39fc6dee: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:45:57.273  INFO 42020 --- [tContainer#0-29] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:46:02.282  WARN 42020 --- [tContainer#0-29] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:46:02.282  INFO 42020 --- [tContainer#0-29] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@f8d0b3d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:46:02.285  INFO 42020 --- [tContainer#0-30] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:46:07.306  WARN 42020 --- [tContainer#0-30] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:46:07.306  INFO 42020 --- [tContainer#0-30] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2da2215b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:46:07.308  INFO 42020 --- [tContainer#0-31] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:46:12.319  WARN 42020 --- [tContainer#0-31] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:46:12.319  INFO 42020 --- [tContainer#0-31] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6662fb48: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:46:12.321  INFO 42020 --- [tContainer#0-32] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:46:17.339  WARN 42020 --- [tContainer#0-32] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:46:17.340  INFO 42020 --- [tContainer#0-32] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@79f2c714: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:46:17.341  INFO 42020 --- [tContainer#0-33] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:46:22.366  WARN 42020 --- [tContainer#0-33] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:46:22.366  INFO 42020 --- [tContainer#0-33] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5e647c3c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:46:22.368  INFO 42020 --- [tContainer#0-34] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:46:27.390  WARN 42020 --- [tContainer#0-34] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:46:27.390  INFO 42020 --- [tContainer#0-34] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@497b3116: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:46:27.391  INFO 42020 --- [tContainer#0-35] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:46:32.410  WARN 42020 --- [tContainer#0-35] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:46:32.410  INFO 42020 --- [tContainer#0-35] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@34435b6d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:46:32.411  INFO 42020 --- [tContainer#0-36] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:46:37.431  WARN 42020 --- [tContainer#0-36] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:46:37.431  INFO 42020 --- [tContainer#0-36] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6bd824a4: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:46:37.433  INFO 42020 --- [tContainer#0-37] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:46:42.456  WARN 42020 --- [tContainer#0-37] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:46:42.456  INFO 42020 --- [tContainer#0-37] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@47536ee3: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:46:42.458  INFO 42020 --- [tContainer#0-38] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:46:47.478  WARN 42020 --- [tContainer#0-38] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:46:47.478  INFO 42020 --- [tContainer#0-38] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@751908f1: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:46:47.481  INFO 42020 --- [tContainer#0-39] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:46:52.493  WARN 42020 --- [tContainer#0-39] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:46:52.494  INFO 42020 --- [tContainer#0-39] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5156abcf: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:46:52.496  INFO 42020 --- [tContainer#0-40] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:46:57.516  WARN 42020 --- [tContainer#0-40] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:46:57.516  INFO 42020 --- [tContainer#0-40] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@293c921a: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:46:57.517  INFO 42020 --- [tContainer#0-41] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:47:02.537  WARN 42020 --- [tContainer#0-41] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:47:02.537  INFO 42020 --- [tContainer#0-41] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@150ffcc0: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:47:02.539  INFO 42020 --- [tContainer#0-42] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:47:07.559  WARN 42020 --- [tContainer#0-42] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:47:07.559  INFO 42020 --- [tContainer#0-42] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@37280f2e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:47:07.561  INFO 42020 --- [tContainer#0-43] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:47:12.591  WARN 42020 --- [tContainer#0-43] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:47:12.591  INFO 42020 --- [tContainer#0-43] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1c2f365f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:47:12.594  INFO 42020 --- [tContainer#0-44] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:47:17.604  WARN 42020 --- [tContainer#0-44] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:47:17.604  INFO 42020 --- [tContainer#0-44] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@178d6735: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:47:17.606  INFO 42020 --- [tContainer#0-45] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:47:22.627  WARN 42020 --- [tContainer#0-45] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:47:22.627  INFO 42020 --- [tContainer#0-45] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@a318190: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:47:22.629  INFO 42020 --- [tContainer#0-46] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:47:27.642  WARN 42020 --- [tContainer#0-46] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:47:27.642  INFO 42020 --- [tContainer#0-46] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@73cdec93: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:47:27.644  INFO 42020 --- [tContainer#0-47] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:47:32.666  WARN 42020 --- [tContainer#0-47] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:47:32.666  INFO 42020 --- [tContainer#0-47] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1e117352: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:47:32.669  INFO 42020 --- [tContainer#0-48] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:47:37.688  WARN 42020 --- [tContainer#0-48] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:47:37.688  INFO 42020 --- [tContainer#0-48] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2db79cd6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:47:37.690  INFO 42020 --- [tContainer#0-49] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:47:42.700  WARN 42020 --- [tContainer#0-49] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:47:42.700  INFO 42020 --- [tContainer#0-49] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@36e5859c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:47:42.702  INFO 42020 --- [tContainer#0-50] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:47:47.713  WARN 42020 --- [tContainer#0-50] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:47:47.713  INFO 42020 --- [tContainer#0-50] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1c828e27: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:47:47.715  INFO 42020 --- [tContainer#0-51] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:47:52.724  WARN 42020 --- [tContainer#0-51] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:47:52.724  INFO 42020 --- [tContainer#0-51] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1f523487: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:47:52.726  INFO 42020 --- [tContainer#0-52] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:47:57.523  INFO 42020 --- [nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-18 13:47:57.523  INFO 42020 --- [nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-18 13:47:57.526  INFO 42020 --- [nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-04-18 13:47:57.587 TRACE 42020 --- [nio-8888-exec-1] org.zalando.logbook.Logbook              : Incoming Request: 9cd951d6766838b8
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:8888/api/front/ai/search HTTP/1.1
+connection: Keep-Alive
+content-length: 23
+content-type: application/json
+expect: 100-continue
+host: localhost:8888
+user-agent: Mozilla/5.0 (Windows NT; Windows NT 10.0; zh-CN) WindowsPowerShell/5.1.26100.8115
+
+{"query":"??","topK":5}
+2026-04-18 13:47:57.714  WARN 42020 --- [nio-8888-exec-1] i.g.x.n.s.impl.AiSearchServiceImpl       : [AI搜索降级] Milvus向量数据库未启用，使用数据库关键字搜索: query=??
+2026-04-18 13:47:57.741 DEBUG 42020 --- [nio-8888-exec-1] i.g.x.n.d.m.BookInfoMapper.selectList    : ==>  Preparing: SELECT id,work_direction,category_id,category_name,pic_url,book_name,author_id,author_name,book_desc,score,book_status,visit_count,word_count,comment_count,last_chapter_id,last_chapter_name,last_chapter_update_time,is_vip,create_time,update_time FROM book_info WHERE (book_name LIKE ? OR book_desc LIKE ? OR author_name LIKE ?) ORDER BY visit_count DESC LIMIT 5
+2026-04-18 13:47:57.743 DEBUG 42020 --- [nio-8888-exec-1] i.g.x.n.d.m.BookInfoMapper.selectList    : ==> Parameters: %??%(String), %??%(String), %??%(String)
+2026-04-18 13:47:57.748  WARN 42020 --- [tContainer#0-52] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:47:57.748  INFO 42020 --- [tContainer#0-52] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6b69b1bf: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:47:57.750  INFO 42020 --- [tContainer#0-53] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:47:57.767 DEBUG 42020 --- [nio-8888-exec-1] i.g.x.n.d.m.BookInfoMapper.selectList    : <==      Total: 0
+2026-04-18 13:47:57.809 TRACE 42020 --- [nio-8888-exec-1] org.zalando.logbook.Logbook              : Outgoing Response: 9cd951d6766838b8
+Duration: 236 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Sat, 18 Apr 2026 05:47:57 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":[],"ok":true}
+2026-04-18 13:47:57.921 TRACE 42020 --- [nio-8888-exec-2] org.zalando.logbook.Logbook              : Incoming Request: e045c10f49e4d22d
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8888/api/front/ai/similar/1?topK=5 HTTP/1.1
+host: localhost:8888
+user-agent: Mozilla/5.0 (Windows NT; Windows NT 10.0; zh-CN) WindowsPowerShell/5.1.26100.8115
+2026-04-18 13:47:57.926  WARN 42020 --- [nio-8888-exec-2] i.g.x.n.s.impl.AiSearchServiceImpl       : [相似推荐降级] Milvus向量数据库未启用，返回空列表
+2026-04-18 13:47:57.929 TRACE 42020 --- [nio-8888-exec-2] org.zalando.logbook.Logbook              : Outgoing Response: e045c10f49e4d22d
+Duration: 7 ms
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 18 Apr 2026 05:47:57 GMT
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":[],"ok":true}
+2026-04-18 13:47:57.966 TRACE 42020 --- [nio-8888-exec-3] org.zalando.logbook.Logbook              : Incoming Request: a16fa32f3776850c
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:8888/api/front/ai/ask HTTP/1.1
+content-length: 47
+content-type: application/json
+expect: 100-continue
+host: localhost:8888
+
+{"question":"主角是谁","bookId":1,"topK":5}
+2026-04-18 13:47:57.970  WARN 42020 --- [nio-8888-exec-3] i.g.x.n.s.impl.AiSearchServiceImpl       : [AI问答降级] Milvus向量数据库未启用，无法检索小说内容
+2026-04-18 13:47:58.013 TRACE 42020 --- [nio-8888-exec-3] org.zalando.logbook.Logbook              : Outgoing Response: a16fa32f3776850c
+Duration: 52 ms
+HTTP/1.1 200 OK
+Content-Type: text/event-stream
+Date: Sat, 18 Apr 2026 05:47:57 GMT
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+<stream>
+2026-04-18 13:47:58.017 TRACE 42020 --- [nio-8888-exec-4] org.zalando.logbook.Logbook              : Incoming Request: 924dda5f51b43ab1
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8888/api/front/home/books HTTP/1.1
+host: localhost:8888
+user-agent: Mozilla/5.0 (Windows NT; Windows NT 10.0; zh-CN) WindowsPowerShell/5.1.26100.8115
+2026-04-18 13:47:58.019 DEBUG 42020 --- [nio-8888-exec-4] i.g.x.n.controller.front.HomeController  : 处理请求的线程：Thread[http-nio-8888-exec-4,5,main]
+2026-04-18 13:47:58.025 DEBUG 42020 --- [nio-8888-exec-4] i.g.x.n.d.m.HomeBookMapper.selectList    : ==>  Preparing: SELECT id,type,sort,book_id,create_time,update_time FROM home_book ORDER BY sort ASC
+2026-04-18 13:47:58.025 DEBUG 42020 --- [nio-8888-exec-4] i.g.x.n.d.m.HomeBookMapper.selectList    : ==> Parameters: 
+2026-04-18 13:47:58.028 DEBUG 42020 --- [nio-8888-exec-4] i.g.x.n.d.m.HomeBookMapper.selectList    : <==      Total: 0
+2026-04-18 13:47:58.032 TRACE 42020 --- [nio-8888-exec-4] org.zalando.logbook.Logbook              : Outgoing Response: 924dda5f51b43ab1
+Duration: 14 ms
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 18 Apr 2026 05:47:57 GMT
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":[],"ok":true}
+2026-04-18 13:48:02.771  WARN 42020 --- [tContainer#0-53] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:48:02.771  INFO 42020 --- [tContainer#0-53] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@4cd51b4d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:48:02.773  INFO 42020 --- [tContainer#0-54] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:48:07.786  WARN 42020 --- [tContainer#0-54] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:48:07.786  INFO 42020 --- [tContainer#0-54] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6e3bc4fc: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:48:07.788  INFO 42020 --- [tContainer#0-55] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:48:12.810  WARN 42020 --- [tContainer#0-55] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:48:12.810  INFO 42020 --- [tContainer#0-55] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5e865f33: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:48:12.812  INFO 42020 --- [tContainer#0-56] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:48:17.819  WARN 42020 --- [tContainer#0-56] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:48:17.819  INFO 42020 --- [tContainer#0-56] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@599f788b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:48:17.821  INFO 42020 --- [tContainer#0-57] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:48:22.839  WARN 42020 --- [tContainer#0-57] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:48:22.839  INFO 42020 --- [tContainer#0-57] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2793a2e8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:48:22.841  INFO 42020 --- [tContainer#0-58] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:48:27.849  WARN 42020 --- [tContainer#0-58] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:48:27.850  INFO 42020 --- [tContainer#0-58] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@70ef9f36: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:48:27.851  INFO 42020 --- [tContainer#0-59] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:48:32.869  WARN 42020 --- [tContainer#0-59] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:48:32.869  INFO 42020 --- [tContainer#0-59] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1c96113a: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:48:32.871  INFO 42020 --- [tContainer#0-60] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:48:36.693 DEBUG 42020 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 13:48:36.694 DEBUG 42020 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 13:48:36.695 DEBUG 42020 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 13:48:36.695  INFO 42020 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 13:48:37.880  WARN 42020 --- [tContainer#0-60] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:48:37.881  INFO 42020 --- [tContainer#0-60] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@7bed14ff: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:48:37.883  INFO 42020 --- [tContainer#0-61] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:48:42.906  WARN 42020 --- [tContainer#0-61] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:48:42.906  INFO 42020 --- [tContainer#0-61] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@4b482a01: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:48:42.908  INFO 42020 --- [tContainer#0-62] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:48:47.918  WARN 42020 --- [tContainer#0-62] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:48:47.918  INFO 42020 --- [tContainer#0-62] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@72ba856e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:48:47.920  INFO 42020 --- [tContainer#0-63] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:48:52.939  WARN 42020 --- [tContainer#0-63] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:48:52.939  INFO 42020 --- [tContainer#0-63] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@ffbeb0a: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:48:52.941  INFO 42020 --- [tContainer#0-64] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:48:57.962  WARN 42020 --- [tContainer#0-64] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:48:57.962  INFO 42020 --- [tContainer#0-64] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@41248083: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:48:57.964  INFO 42020 --- [tContainer#0-65] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:49:02.985  WARN 42020 --- [tContainer#0-65] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:49:02.985  INFO 42020 --- [tContainer#0-65] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@277dc190: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:49:02.986  INFO 42020 --- [tContainer#0-66] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:49:08.007  WARN 42020 --- [tContainer#0-66] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:49:08.008  INFO 42020 --- [tContainer#0-66] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2f7ce05b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:49:08.011  INFO 42020 --- [tContainer#0-67] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:49:13.033  WARN 42020 --- [tContainer#0-67] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:49:13.033  INFO 42020 --- [tContainer#0-67] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@56f0cacb: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:49:13.036  INFO 42020 --- [tContainer#0-68] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:49:18.048  WARN 42020 --- [tContainer#0-68] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:49:18.048  INFO 42020 --- [tContainer#0-68] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@26381cd3: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:49:18.051  INFO 42020 --- [tContainer#0-69] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:49:23.061  WARN 42020 --- [tContainer#0-69] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:49:23.061  INFO 42020 --- [tContainer#0-69] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@414f5b76: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:49:23.063  INFO 42020 --- [tContainer#0-70] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:49:28.075  WARN 42020 --- [tContainer#0-70] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:49:28.076  INFO 42020 --- [tContainer#0-70] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@4be288ad: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:49:28.077  INFO 42020 --- [tContainer#0-71] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:49:33.088  WARN 42020 --- [tContainer#0-71] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:49:33.088  INFO 42020 --- [tContainer#0-71] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@7b8df6b6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:49:33.090  INFO 42020 --- [tContainer#0-72] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:49:38.101  WARN 42020 --- [tContainer#0-72] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:49:38.101  INFO 42020 --- [tContainer#0-72] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@716931d8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:49:38.106  INFO 42020 --- [tContainer#0-73] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:49:43.120  WARN 42020 --- [tContainer#0-73] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:49:43.120  INFO 42020 --- [tContainer#0-73] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2a8e1625: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:49:43.122  INFO 42020 --- [tContainer#0-74] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:49:48.145  WARN 42020 --- [tContainer#0-74] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:49:48.145  INFO 42020 --- [tContainer#0-74] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@618df0a: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:49:48.147  INFO 42020 --- [tContainer#0-75] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:49:53.159  WARN 42020 --- [tContainer#0-75] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:49:53.159  INFO 42020 --- [tContainer#0-75] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@48ddfd20: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:49:53.162  INFO 42020 --- [tContainer#0-76] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:49:58.179  WARN 42020 --- [tContainer#0-76] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:49:58.179  INFO 42020 --- [tContainer#0-76] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@17e2f7a8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:49:58.181  INFO 42020 --- [tContainer#0-77] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:50:03.200  WARN 42020 --- [tContainer#0-77] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:50:03.200  INFO 42020 --- [tContainer#0-77] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@797a788f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:50:03.201  INFO 42020 --- [tContainer#0-78] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:50:08.211  WARN 42020 --- [tContainer#0-78] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:50:08.211  INFO 42020 --- [tContainer#0-78] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3238573f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:50:08.212  INFO 42020 --- [tContainer#0-79] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:50:13.224  WARN 42020 --- [tContainer#0-79] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:50:13.224  INFO 42020 --- [tContainer#0-79] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@4813c71d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:50:13.226  INFO 42020 --- [tContainer#0-80] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:50:18.249  WARN 42020 --- [tContainer#0-80] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:50:18.249  INFO 42020 --- [tContainer#0-80] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@517e8f6e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:50:18.251  INFO 42020 --- [tContainer#0-81] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:50:23.269  WARN 42020 --- [tContainer#0-81] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:50:23.269  INFO 42020 --- [tContainer#0-81] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@35b303ac: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:50:23.271  INFO 42020 --- [tContainer#0-82] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:50:28.290  WARN 42020 --- [tContainer#0-82] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:50:28.290  INFO 42020 --- [tContainer#0-82] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6ba715ab: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:50:28.292  INFO 42020 --- [tContainer#0-83] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:50:33.309  WARN 42020 --- [tContainer#0-83] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:50:33.309  INFO 42020 --- [tContainer#0-83] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@10179b22: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:50:33.310  INFO 42020 --- [tContainer#0-84] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:50:38.333  WARN 42020 --- [tContainer#0-84] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:50:38.333  INFO 42020 --- [tContainer#0-84] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@7a9b0106: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:50:38.335  INFO 42020 --- [tContainer#0-85] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:50:43.355  WARN 42020 --- [tContainer#0-85] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:50:43.355  INFO 42020 --- [tContainer#0-85] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@7dce1459: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:50:43.357  INFO 42020 --- [tContainer#0-86] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:50:48.378  WARN 42020 --- [tContainer#0-86] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:50:48.378  INFO 42020 --- [tContainer#0-86] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@4c16acbb: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:50:48.379  INFO 42020 --- [tContainer#0-87] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:50:53.400  WARN 42020 --- [tContainer#0-87] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:50:53.400  INFO 42020 --- [tContainer#0-87] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@56dc1dfd: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:50:53.402  INFO 42020 --- [tContainer#0-88] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:50:58.421  WARN 42020 --- [tContainer#0-88] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:50:58.421  INFO 42020 --- [tContainer#0-88] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@29159777: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:50:58.422  INFO 42020 --- [tContainer#0-89] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:51:03.453  WARN 42020 --- [tContainer#0-89] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:51:03.453  INFO 42020 --- [tContainer#0-89] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@59daa50f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:51:03.455  INFO 42020 --- [tContainer#0-90] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:51:08.468  WARN 42020 --- [tContainer#0-90] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:51:08.468  INFO 42020 --- [tContainer#0-90] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@7040b7bd: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:51:08.469  INFO 42020 --- [tContainer#0-91] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:51:13.490  WARN 42020 --- [tContainer#0-91] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:51:13.490  INFO 42020 --- [tContainer#0-91] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@79741312: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:51:13.493  INFO 42020 --- [tContainer#0-92] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:51:18.515  WARN 42020 --- [tContainer#0-92] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:51:18.515  INFO 42020 --- [tContainer#0-92] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2c2cca53: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:51:18.518  INFO 42020 --- [tContainer#0-93] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:51:23.529  WARN 42020 --- [tContainer#0-93] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:51:23.529  INFO 42020 --- [tContainer#0-93] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@717aad66: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:51:23.531  INFO 42020 --- [tContainer#0-94] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:51:28.541  WARN 42020 --- [tContainer#0-94] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:51:28.541  INFO 42020 --- [tContainer#0-94] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@57648163: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:51:28.544  INFO 42020 --- [tContainer#0-95] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:51:33.565  WARN 42020 --- [tContainer#0-95] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:51:33.565  INFO 42020 --- [tContainer#0-95] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@60d71158: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:51:33.566  INFO 42020 --- [tContainer#0-96] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:51:38.587  WARN 42020 --- [tContainer#0-96] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:51:38.587  INFO 42020 --- [tContainer#0-96] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6e5c1f25: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:51:38.589  INFO 42020 --- [tContainer#0-97] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:51:43.609  WARN 42020 --- [tContainer#0-97] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:51:43.610  INFO 42020 --- [tContainer#0-97] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@884c2dd: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:51:43.611  INFO 42020 --- [tContainer#0-98] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:51:48.640  WARN 42020 --- [tContainer#0-98] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:51:48.640  INFO 42020 --- [tContainer#0-98] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3ac5d0e2: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:51:48.641  INFO 42020 --- [tContainer#0-99] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:51:53.650  WARN 42020 --- [tContainer#0-99] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:51:53.650  INFO 42020 --- [tContainer#0-99] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5c28eb88: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:51:53.651  INFO 42020 --- [Container#0-100] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:51:58.669  WARN 42020 --- [Container#0-100] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:51:58.670  INFO 42020 --- [Container#0-100] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@61d044d8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:51:58.672  INFO 42020 --- [Container#0-101] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:52:03.696  WARN 42020 --- [Container#0-101] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:52:03.697  INFO 42020 --- [Container#0-101] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@66445b21: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:52:03.698  INFO 42020 --- [Container#0-102] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:52:08.717  WARN 42020 --- [Container#0-102] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:52:08.717  INFO 42020 --- [Container#0-102] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@13be130c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:52:08.719  INFO 42020 --- [Container#0-103] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:52:13.739  WARN 42020 --- [Container#0-103] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:52:13.740  INFO 42020 --- [Container#0-103] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@573eadde: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:52:13.742  INFO 42020 --- [Container#0-104] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:52:18.765  WARN 42020 --- [Container#0-104] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:52:18.765  INFO 42020 --- [Container#0-104] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2d5f9111: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:52:18.767  INFO 42020 --- [Container#0-105] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:52:23.777  WARN 42020 --- [Container#0-105] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:52:23.777  INFO 42020 --- [Container#0-105] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5399ab94: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:52:23.779  INFO 42020 --- [Container#0-106] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:52:28.787  WARN 42020 --- [Container#0-106] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:52:28.787  INFO 42020 --- [Container#0-106] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@481f413f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:52:28.789  INFO 42020 --- [Container#0-107] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:52:33.806  WARN 42020 --- [Container#0-107] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:52:33.806  INFO 42020 --- [Container#0-107] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@21ec209a: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:52:33.808  INFO 42020 --- [Container#0-108] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:52:38.827  WARN 42020 --- [Container#0-108] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:52:38.828  INFO 42020 --- [Container#0-108] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@e9519d3: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:52:38.830  INFO 42020 --- [Container#0-109] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:52:43.841  WARN 42020 --- [Container#0-109] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:52:43.841  INFO 42020 --- [Container#0-109] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@20cdc36e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:52:43.843  INFO 42020 --- [Container#0-110] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:52:48.858  WARN 42020 --- [Container#0-110] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:52:48.858  INFO 42020 --- [Container#0-110] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2432e1ae: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:52:48.859  INFO 42020 --- [Container#0-111] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:52:53.870  WARN 42020 --- [Container#0-111] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:52:53.870  INFO 42020 --- [Container#0-111] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@4f6fcfc2: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:52:53.872  INFO 42020 --- [Container#0-112] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:52:58.895  WARN 42020 --- [Container#0-112] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:52:58.895  INFO 42020 --- [Container#0-112] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1b9bd4bf: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:52:58.897  INFO 42020 --- [Container#0-113] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:53:03.919  WARN 42020 --- [Container#0-113] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:53:03.919  INFO 42020 --- [Container#0-113] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@337c7686: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:53:03.921  INFO 42020 --- [Container#0-114] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:53:08.942  WARN 42020 --- [Container#0-114] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:53:08.942  INFO 42020 --- [Container#0-114] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@659d53c7: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:53:08.944  INFO 42020 --- [Container#0-115] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:53:13.965  WARN 42020 --- [Container#0-115] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:53:13.965  INFO 42020 --- [Container#0-115] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1f1853f8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:53:13.966  INFO 42020 --- [Container#0-116] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:53:18.987  WARN 42020 --- [Container#0-116] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:53:18.987  INFO 42020 --- [Container#0-116] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3b598842: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:53:18.988  INFO 42020 --- [Container#0-117] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:53:23.997  WARN 42020 --- [Container#0-117] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:53:23.997  INFO 42020 --- [Container#0-117] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@7123e67b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:53:23.999  INFO 42020 --- [Container#0-118] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:53:29.020  WARN 42020 --- [Container#0-118] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:53:29.021  INFO 42020 --- [Container#0-118] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@64b8148b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:53:29.023  INFO 42020 --- [Container#0-119] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:53:34.044  WARN 42020 --- [Container#0-119] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:53:34.044  INFO 42020 --- [Container#0-119] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3e83d5d4: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:53:34.046  INFO 42020 --- [Container#0-120] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:53:36.695 DEBUG 42020 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 13:53:36.695 DEBUG 42020 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 13:53:36.696 DEBUG 42020 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 13:53:36.697  INFO 42020 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 13:53:39.068  WARN 42020 --- [Container#0-120] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:53:39.068  INFO 42020 --- [Container#0-120] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@67a92162: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:53:39.071  INFO 42020 --- [Container#0-121] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:53:44.090  WARN 42020 --- [Container#0-121] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:53:44.090  INFO 42020 --- [Container#0-121] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@381d7808: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:53:44.092  INFO 42020 --- [Container#0-122] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:53:49.113  WARN 42020 --- [Container#0-122] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:53:49.113  INFO 42020 --- [Container#0-122] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2183e322: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:53:49.115  INFO 42020 --- [Container#0-123] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:53:54.135  WARN 42020 --- [Container#0-123] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:53:54.135  INFO 42020 --- [Container#0-123] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@7278c955: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:53:54.137  INFO 42020 --- [Container#0-124] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:53:59.156  WARN 42020 --- [Container#0-124] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:53:59.156  INFO 42020 --- [Container#0-124] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@52e9c9fc: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:53:59.158  INFO 42020 --- [Container#0-125] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:54:04.177  WARN 42020 --- [Container#0-125] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:54:04.177  INFO 42020 --- [Container#0-125] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2f00a0db: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:54:04.178  INFO 42020 --- [Container#0-126] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:54:09.200  WARN 42020 --- [Container#0-126] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:54:09.200  INFO 42020 --- [Container#0-126] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@4bd9c764: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:54:09.203  INFO 42020 --- [Container#0-127] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:54:14.214  WARN 42020 --- [Container#0-127] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:54:14.215  INFO 42020 --- [Container#0-127] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@f6639d1: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:54:14.218  INFO 42020 --- [Container#0-128] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:54:19.225  WARN 42020 --- [Container#0-128] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:54:19.225  INFO 42020 --- [Container#0-128] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@61a12032: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:54:19.227  INFO 42020 --- [Container#0-129] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:54:24.252  WARN 42020 --- [Container#0-129] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:54:24.252  INFO 42020 --- [Container#0-129] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@27f9114c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:54:24.253  INFO 42020 --- [Container#0-130] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:54:29.273  WARN 42020 --- [Container#0-130] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:54:29.273  INFO 42020 --- [Container#0-130] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1030ee6d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:54:29.275  INFO 42020 --- [Container#0-131] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:54:34.299  WARN 42020 --- [Container#0-131] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:54:34.299  INFO 42020 --- [Container#0-131] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1f6be9ad: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:54:34.300  INFO 42020 --- [Container#0-132] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:54:39.318  WARN 42020 --- [Container#0-132] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:54:39.318  INFO 42020 --- [Container#0-132] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@a0970a2: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:54:39.321  INFO 42020 --- [Container#0-133] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:54:44.350  WARN 42020 --- [Container#0-133] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:54:44.351  INFO 42020 --- [Container#0-133] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@7acb69d8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:54:44.353  INFO 42020 --- [Container#0-134] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:54:49.381  WARN 42020 --- [Container#0-134] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:54:49.381  INFO 42020 --- [Container#0-134] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@70e30680: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:54:49.383  INFO 42020 --- [Container#0-135] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:54:54.406  WARN 42020 --- [Container#0-135] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:54:54.406  INFO 42020 --- [Container#0-135] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@46b02700: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:54:54.409  INFO 42020 --- [Container#0-136] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:54:59.430  WARN 42020 --- [Container#0-136] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:54:59.431  INFO 42020 --- [Container#0-136] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1a62832b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:54:59.433  INFO 42020 --- [Container#0-137] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:55:04.451  WARN 42020 --- [Container#0-137] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:55:04.451  INFO 42020 --- [Container#0-137] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6eea3c1: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:55:04.455  INFO 42020 --- [Container#0-138] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:55:09.474  WARN 42020 --- [Container#0-138] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:55:09.474  INFO 42020 --- [Container#0-138] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3bc98e49: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:55:09.476  INFO 42020 --- [Container#0-139] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:55:14.498  WARN 42020 --- [Container#0-139] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:55:14.498  INFO 42020 --- [Container#0-139] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@64f9fef4: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:55:14.500  INFO 42020 --- [Container#0-140] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:55:19.510  WARN 42020 --- [Container#0-140] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:55:19.510  INFO 42020 --- [Container#0-140] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@544aaf6b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:55:19.512  INFO 42020 --- [Container#0-141] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:55:24.523  WARN 42020 --- [Container#0-141] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:55:24.523  INFO 42020 --- [Container#0-141] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@653a0559: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:55:24.525  INFO 42020 --- [Container#0-142] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:55:29.543  WARN 42020 --- [Container#0-142] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:55:29.543  INFO 42020 --- [Container#0-142] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2a4dc793: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:55:29.546  INFO 42020 --- [Container#0-143] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:55:34.566  WARN 42020 --- [Container#0-143] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:55:34.566  INFO 42020 --- [Container#0-143] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@67c97fd5: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:55:34.567  INFO 42020 --- [Container#0-144] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:55:39.587  WARN 42020 --- [Container#0-144] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:55:39.587  INFO 42020 --- [Container#0-144] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@4957203c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:55:39.589  INFO 42020 --- [Container#0-145] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:55:44.618  WARN 42020 --- [Container#0-145] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:55:44.618  INFO 42020 --- [Container#0-145] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@230eeb25: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:55:44.620  INFO 42020 --- [Container#0-146] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:55:49.632  WARN 42020 --- [Container#0-146] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:55:49.632  INFO 42020 --- [Container#0-146] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5f7f07bf: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:55:49.634  INFO 42020 --- [Container#0-147] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:55:54.648  WARN 42020 --- [Container#0-147] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:55:54.648  INFO 42020 --- [Container#0-147] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5074c940: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:55:54.652  INFO 42020 --- [Container#0-148] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:55:59.672  WARN 42020 --- [Container#0-148] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:55:59.672  INFO 42020 --- [Container#0-148] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@205c44a6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:55:59.674  INFO 42020 --- [Container#0-149] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:56:04.704  WARN 42020 --- [Container#0-149] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:56:04.704  INFO 42020 --- [Container#0-149] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@27bcbcc8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:56:04.706  INFO 42020 --- [Container#0-150] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:56:09.727  WARN 42020 --- [Container#0-150] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:56:09.727  INFO 42020 --- [Container#0-150] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@61e471f1: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:56:09.729  INFO 42020 --- [Container#0-151] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:56:14.764  WARN 42020 --- [Container#0-151] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:56:14.764  INFO 42020 --- [Container#0-151] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1f50d1d4: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:56:14.765  INFO 42020 --- [Container#0-152] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:56:19.797  WARN 42020 --- [Container#0-152] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:56:19.798  INFO 42020 --- [Container#0-152] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5bd9b2d6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:56:19.800  INFO 42020 --- [Container#0-153] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:56:24.830  WARN 42020 --- [Container#0-153] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:56:24.830  INFO 42020 --- [Container#0-153] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@319499b2: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:56:24.832  INFO 42020 --- [Container#0-154] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:56:29.861  WARN 42020 --- [Container#0-154] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:56:29.862  INFO 42020 --- [Container#0-154] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@cc2d3e3: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:56:29.863  INFO 42020 --- [Container#0-155] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:56:34.892  WARN 42020 --- [Container#0-155] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:56:34.892  INFO 42020 --- [Container#0-155] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2246596: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:56:34.894  INFO 42020 --- [Container#0-156] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:56:39.923  WARN 42020 --- [Container#0-156] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:56:39.923  INFO 42020 --- [Container#0-156] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2c871da6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:56:39.925  INFO 42020 --- [Container#0-157] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:56:44.957  WARN 42020 --- [Container#0-157] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:56:44.957  INFO 42020 --- [Container#0-157] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@679fe530: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:56:44.959  INFO 42020 --- [Container#0-158] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:56:49.988  WARN 42020 --- [Container#0-158] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:56:49.988  INFO 42020 --- [Container#0-158] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@4b5fb91c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:56:49.990  INFO 42020 --- [Container#0-159] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:56:55.000  WARN 42020 --- [Container#0-159] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:56:55.000  INFO 42020 --- [Container#0-159] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1781ac40: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:56:55.002  INFO 42020 --- [Container#0-160] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:57:00.013  WARN 42020 --- [Container#0-160] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:57:00.013  INFO 42020 --- [Container#0-160] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5bf75ac8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:57:00.015  INFO 42020 --- [Container#0-161] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:57:05.023  WARN 42020 --- [Container#0-161] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:57:05.023  INFO 42020 --- [Container#0-161] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@590cdae2: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:57:05.025  INFO 42020 --- [Container#0-162] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:57:10.045  WARN 42020 --- [Container#0-162] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:57:10.045  INFO 42020 --- [Container#0-162] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@551b85d5: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:57:10.047  INFO 42020 --- [Container#0-163] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:57:15.070  WARN 42020 --- [Container#0-163] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:57:15.070  INFO 42020 --- [Container#0-163] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3c64b1ec: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:57:15.071  INFO 42020 --- [Container#0-164] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:57:20.091  WARN 42020 --- [Container#0-164] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:57:20.091  INFO 42020 --- [Container#0-164] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@c010367: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:57:20.094  INFO 42020 --- [Container#0-165] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:57:25.104  WARN 42020 --- [Container#0-165] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:57:25.104  INFO 42020 --- [Container#0-165] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@b3085b2: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:57:25.106  INFO 42020 --- [Container#0-166] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:57:30.128  WARN 42020 --- [Container#0-166] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:57:30.128  INFO 42020 --- [Container#0-166] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@38702dd1: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:57:30.129  INFO 42020 --- [Container#0-167] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:57:35.161  WARN 42020 --- [Container#0-167] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:57:35.161  INFO 42020 --- [Container#0-167] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@223cec27: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:57:35.162  INFO 42020 --- [Container#0-168] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:57:40.183  WARN 42020 --- [Container#0-168] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:57:40.184  INFO 42020 --- [Container#0-168] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@7ebe9f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:57:40.187  INFO 42020 --- [Container#0-169] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:57:45.197  WARN 42020 --- [Container#0-169] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:57:45.197  INFO 42020 --- [Container#0-169] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@20e11472: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:57:45.199  INFO 42020 --- [Container#0-170] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:57:50.217  WARN 42020 --- [Container#0-170] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:57:50.217  INFO 42020 --- [Container#0-170] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@d2bbe54: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:57:50.219  INFO 42020 --- [Container#0-171] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:57:55.242  WARN 42020 --- [Container#0-171] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:57:55.242  INFO 42020 --- [Container#0-171] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@4914df1f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:57:55.244  INFO 42020 --- [Container#0-172] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:58:00.254  WARN 42020 --- [Container#0-172] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:58:00.254  INFO 42020 --- [Container#0-172] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@16c3fe54: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:58:00.256  INFO 42020 --- [Container#0-173] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:58:05.278  WARN 42020 --- [Container#0-173] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:58:05.278  INFO 42020 --- [Container#0-173] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@7e0ec539: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:58:05.280  INFO 42020 --- [Container#0-174] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:58:10.301  WARN 42020 --- [Container#0-174] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:58:10.301  INFO 42020 --- [Container#0-174] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5d9e412: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:58:10.302  INFO 42020 --- [Container#0-175] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:58:15.322  WARN 42020 --- [Container#0-175] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:58:15.322  INFO 42020 --- [Container#0-175] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@d959d31: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:58:15.324  INFO 42020 --- [Container#0-176] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:58:20.344  WARN 42020 --- [Container#0-176] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:58:20.344  INFO 42020 --- [Container#0-176] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@35eb6e08: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:58:20.346  INFO 42020 --- [Container#0-177] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:58:25.366  WARN 42020 --- [Container#0-177] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:58:25.366  INFO 42020 --- [Container#0-177] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@22a26bfc: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:58:25.368  INFO 42020 --- [Container#0-178] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 13:58:30.379  WARN 42020 --- [Container#0-178] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-04-18 13:58:30.379  INFO 42020 --- [Container#0-178] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@398b7908: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-04-18 13:58:30.381  INFO 42020 --- [Container#0-179] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  15:13 min
+[INFO] Finished at: 2026-04-18T13:58:34+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.3.0:run (default-cli) on project novel: Process terminated with exit code: -1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

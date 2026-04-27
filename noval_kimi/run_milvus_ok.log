@@ -1,0 +1,364 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< io.github.xxyopen:novel >-----------------------
+[INFO] Building novel 3.5.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:3.3.0:run (default-cli) > test-compile @ novel >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ novel ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 35 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ novel ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ novel ---
+[INFO] Copying 7 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ novel ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target\test-classes
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:3.3.0:run (default-cli) < test-compile @ novel <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:3.3.0:run (default-cli) @ novel ---
+[INFO] Attaching agents: []
+14:04:22,012 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.6
+14:04:22,015 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - Here is a list of configurators discovered as a service, by rank: 
+14:04:22,015 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+14:04:22,015 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+14:04:22,015 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+14:04:22,023 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+14:04:22,023 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+14:04:22,024 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+14:04:22,027 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+14:04:22,027 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+14:04:22,027 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 3 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+14:04:22,027 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+14:04:22,028 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+14:04:22,029 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+14:04:22,029 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.xml]
+14:04:22,029 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+14:04:22,029 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - Trying to configure with ch.qos.logback.classic.BasicConfigurator
+14:04:22,030 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - Constructed configurator of type class ch.qos.logback.classic.BasicConfigurator
+14:04:22,030 |-INFO in ch.qos.logback.classic.BasicConfigurator@1a69561c - Setting up default configuration.
+14:04:22,043 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - ch.qos.logback.classic.BasicConfigurator.configure() call lasted 13 milliseconds. ExecutionStatus=NEUTRAL
+14:04:22,574 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word clr with class [org.springframework.boot.logging.logback.ColorConverter]
+14:04:22,574 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wex with class [org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter]
+14:04:22,574 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wEx with class [org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter]
+14:04:22,612 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+14:04:22,612 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+14:04:22,615 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+14:04:22,629 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE]
+14:04:22,629 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+14:04:22,639 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1504321715 - No compression will be used
+14:04:22,640 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1504321715 - Will use the pattern logs/debug.%d.%i.log for the active file
+14:04:22,652 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@363f6148 - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/debug.%d.%i.log'.
+14:04:22,652 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@363f6148 - Roll-over at midnight.
+14:04:22,658 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@363f6148 - Setting initial period to 2026-04-18T05:58:53.577Z
+14:04:22,659 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@363f6148 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+14:04:22,659 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@363f6148 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+14:04:22,660 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+14:04:22,661 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: logs/novel.log
+14:04:22,661 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [logs/novel.log]
+14:04:22,662 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+14:04:22,662 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4b21844c - Propagating INFO level on Logger[ROOT] onto the JUL framework
+14:04:22,662 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+14:04:22,662 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to Logger[ROOT]
+14:04:22,662 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [io.github.xxyopen] to DEBUG
+14:04:22,662 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4b21844c - Propagating DEBUG level on Logger[io.github.xxyopen] onto the JUL framework
+14:04:22,663 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [io.github.xxyopen] to false
+14:04:22,663 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[io.github.xxyopen]
+14:04:22,663 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to Logger[io.github.xxyopen]
+14:04:22,663 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.zalando.logbook] to TRACE
+14:04:22,663 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4b21844c - Propagating TRACE level on Logger[org.zalando.logbook] onto the JUL framework
+14:04:22,663 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.zalando.logbook] to false
+14:04:22,663 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[org.zalando.logbook]
+14:04:22,663 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to Logger[org.zalando.logbook]
+14:04:22,663 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@1b28f282 - End of configuration.
+14:04:22,663 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@138fe6ec - Registering current configuration as safe fallback point
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2026-04-18 14:04:22.694  INFO 116556 --- [kground-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 8.0.1.Final
+2026-04-18 14:04:22.748  INFO 116556 --- [           main] i.github.xxyopen.novel.NovelApplication  : Starting NovelApplication using Java 17.0.16 with PID 116556 (C:\Users\wcc\Project\noval_kimi\target\classes started by wcc in C:\Users\wcc\Project\noval_kimi)
+2026-04-18 14:04:22.749 DEBUG 116556 --- [           main] i.github.xxyopen.novel.NovelApplication  : Running with Spring Boot v3.3.0, Spring v6.1.8
+2026-04-18 14:04:22.750  INFO 116556 --- [           main] i.github.xxyopen.novel.NovelApplication  : The following 1 profile is active: "dev"
+2026-04-18 14:04:24.364  INFO 116556 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-18 14:04:24.366  INFO 116556 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2026-04-18 14:04:24.394  INFO 116556 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 Elasticsearch repository interfaces.
+2026-04-18 14:04:24.399  INFO 116556 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-18 14:04:24.399  INFO 116556 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2026-04-18 14:04:24.405  INFO 116556 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2026-04-18 14:04:24.417  INFO 116556 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-18 14:04:24.418  INFO 116556 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-18 14:04:24.432  INFO 116556 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2026-04-18 14:04:25.742  INFO 116556 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8888 (http)
+2026-04-18 14:04:25.754  INFO 116556 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8888"]
+2026-04-18 14:04:25.756  INFO 116556 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-18 14:04:25.757  INFO 116556 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-04-18 14:04:25.868  INFO 116556 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-18 14:04:25.868  INFO 116556 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2921 ms
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.6 
+2026-04-18 14:04:27.820  INFO 116556 --- [           main] i.g.x.n.core.config.VectorStoreConfig    : 初始化 Milvus 客户端: localhost:19530
+2026-04-18 14:04:28.674  INFO 116556 --- [           main] i.g.x.n.core.config.VectorStoreConfig    : 初始化 Milvus VectorStore: collection=novel_chapters
+2026-04-18 14:04:28.809 ERROR 116556 --- [           main] i.m.client.AbstractMilvusGrpcClient      : DescribeIndexRequest collectionName:novel_chapters, indexName: failed, error code: 25, reason: index doesn't exist, collectionID 465696415016818029
+2026-04-18 14:04:28.810 ERROR 116556 --- [           main] i.m.client.AbstractMilvusGrpcClient      : DescribeIndexRequest collectionName:novel_chapters, indexName: failed! Exception:{}
+
+io.milvus.exception.ServerException: index doesn't exist, collectionID 465696415016818029
+	at io.milvus.client.AbstractMilvusGrpcClient.handleResponse(AbstractMilvusGrpcClient.java:399)
+	at io.milvus.client.AbstractMilvusGrpcClient.describeIndex(AbstractMilvusGrpcClient.java:1423)
+	at io.milvus.client.MilvusServiceClient.lambda$describeIndex$32(MilvusServiceClient.java:611)
+	at io.milvus.client.MilvusServiceClient.retry(MilvusServiceClient.java:326)
+	at io.milvus.client.MilvusServiceClient.describeIndex(MilvusServiceClient.java:611)
+	at org.springframework.ai.vectorstore.milvus.MilvusVectorStore.createCollection(MilvusVectorStore.java:449)
+	at org.springframework.ai.vectorstore.milvus.MilvusVectorStore.afterPropertiesSet(MilvusVectorStore.java:421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at io.github.xxyopen.novel.NovelApplication.main(NovelApplication.java:30)
+
+2026-04-18 14:04:28.831 ERROR 116556 --- [           main] i.m.client.AbstractMilvusGrpcClient      : CreateIndexRequest collectionName:novel_chapters, fieldName:embedding failed, error code: 1, reason: metric type not found or not supported, supported: [L2 IP]
+2026-04-18 14:04:28.832 ERROR 116556 --- [           main] i.m.client.AbstractMilvusGrpcClient      : CreateIndexRequest collectionName:novel_chapters, fieldName:embedding failed! Exception:{}
+
+io.milvus.exception.ServerException: metric type not found or not supported, supported: [L2 IP]
+	at io.milvus.client.AbstractMilvusGrpcClient.handleResponse(AbstractMilvusGrpcClient.java:399)
+	at io.milvus.client.AbstractMilvusGrpcClient.createIndex(AbstractMilvusGrpcClient.java:1349)
+	at io.milvus.client.MilvusServiceClient.lambda$createIndex$30(MilvusServiceClient.java:601)
+	at io.milvus.client.MilvusServiceClient.retry(MilvusServiceClient.java:326)
+	at io.milvus.client.MilvusServiceClient.createIndex(MilvusServiceClient.java:601)
+	at org.springframework.ai.vectorstore.milvus.MilvusVectorStore.createCollection(MilvusVectorStore.java:455)
+	at org.springframework.ai.vectorstore.milvus.MilvusVectorStore.afterPropertiesSet(MilvusVectorStore.java:421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at io.github.xxyopen.novel.NovelApplication.main(NovelApplication.java:30)
+
+2026-04-18 14:04:28.832  WARN 116556 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authorController' defined in file [C:\Users\wcc\Project\noval_kimi\target\classes\io\github\xxyopen\novel\controller\author\AuthorController.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'bookServiceImpl': Unsatisfied dependency expressed through field 'bookVectorService': Error creating bean with name 'bookVectorServiceImpl': Unsatisfied dependency expressed through field 'vectorStore': Error creating bean with name 'vectorStore' defined in class path resource [io/github/xxyopen/novel/core/config/VectorStoreConfig.class]: Failed to create Index
+2026-04-18 14:04:28.846  INFO 116556 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-04-18 14:04:28.882  INFO 116556 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-04-18 14:04:28.896 ERROR 116556 --- [           main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authorController' defined in file [C:\Users\wcc\Project\noval_kimi\target\classes\io\github\xxyopen\novel\controller\author\AuthorController.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'bookServiceImpl': Unsatisfied dependency expressed through field 'bookVectorService': Error creating bean with name 'bookVectorServiceImpl': Unsatisfied dependency expressed through field 'vectorStore': Error creating bean with name 'vectorStore' defined in class path resource [io/github/xxyopen/novel/core/config/VectorStoreConfig.class]: Failed to create Index
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at io.github.xxyopen.novel.NovelApplication.main(NovelApplication.java:30)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookServiceImpl': Unsatisfied dependency expressed through field 'bookVectorService': Error creating bean with name 'bookVectorServiceImpl': Unsatisfied dependency expressed through field 'vectorStore': Error creating bean with name 'vectorStore' defined in class path resource [io/github/xxyopen/novel/core/config/VectorStoreConfig.class]: Failed to create Index
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'bookVectorServiceImpl': Unsatisfied dependency expressed through field 'vectorStore': Error creating bean with name 'vectorStore' defined in class path resource [io/github/xxyopen/novel/core/config/VectorStoreConfig.class]: Failed to create Index
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'vectorStore' defined in class path resource [io/github/xxyopen/novel/core/config/VectorStoreConfig.class]: Failed to create Index
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 48 common frames omitted
+Caused by: java.lang.RuntimeException: Failed to create Index
+	at org.springframework.ai.vectorstore.milvus.MilvusVectorStore.createCollection(MilvusVectorStore.java:466)
+	at org.springframework.ai.vectorstore.milvus.MilvusVectorStore.afterPropertiesSet(MilvusVectorStore.java:421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	... 58 common frames omitted
+Caused by: io.milvus.exception.ServerException: metric type not found or not supported, supported: [L2 IP]
+	at io.milvus.client.AbstractMilvusGrpcClient.handleResponse(AbstractMilvusGrpcClient.java:399)
+	at io.milvus.client.AbstractMilvusGrpcClient.createIndex(AbstractMilvusGrpcClient.java:1349)
+	at io.milvus.client.MilvusServiceClient.lambda$createIndex$30(MilvusServiceClient.java:601)
+	at io.milvus.client.MilvusServiceClient.retry(MilvusServiceClient.java:326)
+	at io.milvus.client.MilvusServiceClient.createIndex(MilvusServiceClient.java:601)
+	at org.springframework.ai.vectorstore.milvus.MilvusVectorStore.createCollection(MilvusVectorStore.java:455)
+	... 61 common frames omitted
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  13.714 s
+[INFO] Finished at: 2026-04-18T14:04:29+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.3.0:run (default-cli) on project novel: Process terminated with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

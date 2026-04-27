@@ -1,0 +1,926 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< io.github.xxyopen:novel >-----------------------
+[INFO] Building novel 3.5.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:3.3.0:run (default-cli) > test-compile @ novel >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ novel ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 35 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ novel ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ novel ---
+[INFO] Copying 7 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ novel ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:3.3.0:run (default-cli) < test-compile @ novel <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:3.3.0:run (default-cli) @ novel ---
+[INFO] Attaching agents: []
+16:23:45,979 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.6
+16:23:45,982 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - Here is a list of configurators discovered as a service, by rank: 
+16:23:45,983 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+16:23:45,983 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+16:23:45,983 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+16:23:45,992 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 0 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:23:45,992 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+16:23:45,993 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+16:23:45,996 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+16:23:45,997 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+16:23:45,997 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 4 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:23:45,997 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+16:23:45,998 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+16:23:45,998 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+16:23:45,999 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.xml]
+16:23:45,999 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+16:23:45,999 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - Trying to configure with ch.qos.logback.classic.BasicConfigurator
+16:23:46,000 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - Constructed configurator of type class ch.qos.logback.classic.BasicConfigurator
+16:23:46,000 |-INFO in ch.qos.logback.classic.BasicConfigurator@1a69561c - Setting up default configuration.
+16:23:46,018 |-INFO in ch.qos.logback.classic.util.ContextInitializer@552518c3 - ch.qos.logback.classic.BasicConfigurator.configure() call lasted 18 milliseconds. ExecutionStatus=NEUTRAL
+16:23:46,633 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word clr with class [org.springframework.boot.logging.logback.ColorConverter]
+16:23:46,633 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wex with class [org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter]
+16:23:46,633 |-INFO in ch.qos.logback.core.joran.action.ConversionRuleAction - registering conversion word wEx with class [org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter]
+16:23:46,672 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+16:23:46,672 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:23:46,675 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:23:46,692 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE]
+16:23:46,692 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+16:23:46,700 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1504321715 - No compression will be used
+16:23:46,701 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1504321715 - Will use the pattern logs/debug.%d.%i.log for the active file
+16:23:46,712 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@363f6148 - The date pattern is 'yyyy-MM-dd' from file name pattern 'logs/debug.%d.%i.log'.
+16:23:46,712 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@363f6148 - Roll-over at midnight.
+16:23:46,716 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@363f6148 - Setting initial period to 2026-04-18T08:21:29.286Z
+16:23:46,716 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@363f6148 - SizeAndTimeBasedFNATP is deprecated. Use SizeAndTimeBasedRollingPolicy instead
+16:23:46,716 |-WARN in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@363f6148 - For more information see http://logback.qos.ch/manual/appenders.html#SizeAndTimeBasedRollingPolicy
+16:23:46,719 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+16:23:46,720 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - Active log file name: logs/novel.log
+16:23:46,720 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[FILE] - File property is set to [logs/novel.log]
+16:23:46,721 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+16:23:46,721 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4b21844c - Propagating INFO level on Logger[ROOT] onto the JUL framework
+16:23:46,722 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+16:23:46,722 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to Logger[ROOT]
+16:23:46,722 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [io.github.xxyopen] to DEBUG
+16:23:46,722 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4b21844c - Propagating DEBUG level on Logger[io.github.xxyopen] onto the JUL framework
+16:23:46,723 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [io.github.xxyopen] to false
+16:23:46,723 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[io.github.xxyopen]
+16:23:46,723 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to Logger[io.github.xxyopen]
+16:23:46,723 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.zalando.logbook] to TRACE
+16:23:46,723 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4b21844c - Propagating TRACE level on Logger[org.zalando.logbook] onto the JUL framework
+16:23:46,724 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [org.zalando.logbook] to false
+16:23:46,724 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[org.zalando.logbook]
+16:23:46,724 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to Logger[org.zalando.logbook]
+16:23:46,724 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@1b28f282 - End of configuration.
+16:23:46,724 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@138fe6ec - Registering current configuration as safe fallback point
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2026-04-18 16:23:46.751  INFO 122664 --- [kground-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 8.0.1.Final
+2026-04-18 16:23:46.813  INFO 122664 --- [           main] i.github.xxyopen.novel.NovelApplication  : Starting NovelApplication using Java 17.0.16 with PID 122664 (C:\Users\wcc\Project\noval_kimi\target\classes started by wcc in C:\Users\wcc\Project\noval_kimi)
+2026-04-18 16:23:46.814 DEBUG 122664 --- [           main] i.github.xxyopen.novel.NovelApplication  : Running with Spring Boot v3.3.0, Spring v6.1.8
+2026-04-18 16:23:46.814  INFO 122664 --- [           main] i.github.xxyopen.novel.NovelApplication  : The following 1 profile is active: "dev"
+2026-04-18 16:23:48.638  INFO 122664 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-18 16:23:48.640  INFO 122664 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2026-04-18 16:23:48.666  INFO 122664 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 Elasticsearch repository interfaces.
+2026-04-18 16:23:48.670  INFO 122664 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-18 16:23:48.671  INFO 122664 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2026-04-18 16:23:48.677  INFO 122664 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2026-04-18 16:23:48.688  INFO 122664 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-04-18 16:23:48.689  INFO 122664 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-04-18 16:23:48.702  INFO 122664 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2026-04-18 16:23:50.103  INFO 122664 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8888 (http)
+2026-04-18 16:23:50.116  INFO 122664 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8888"]
+2026-04-18 16:23:50.118  INFO 122664 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-18 16:23:50.119  INFO 122664 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-04-18 16:23:50.235  INFO 122664 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-18 16:23:50.237  INFO 122664 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3203 ms
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.5.6 
+2026-04-18 16:23:52.641  INFO 122664 --- [           main] i.g.x.n.core.config.VectorStoreConfig    : 初始化 Milvus 客户端: localhost:19530
+2026-04-18 16:23:53.732  INFO 122664 --- [           main] i.g.x.n.core.config.VectorStoreConfig    : 初始化 Milvus VectorStore: collection=novel_chapters, metric=IP
+2026-04-18 16:23:54.187  INFO 122664 --- [           main] org.redisson.Version                     : Redisson 3.19.1
+2026-04-18 16:23:54.521  INFO 122664 --- [isson-netty-2-5] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+2026-04-18 16:23:54.561  INFO 122664 --- [sson-netty-2-19] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for 127.0.0.1/127.0.0.1:6379
+2026-04-18 16:23:54.841  INFO 122664 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-18 16:23:55.095  INFO 122664 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a514a2b
+2026-04-18 16:23:55.097  INFO 122664 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-18 16:23:55.105 DEBUG 122664 --- [           main] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 16:23:55.147 DEBUG 122664 --- [           main] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 16:23:55.194 DEBUG 122664 --- [           main] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 16:23:55.201  INFO 122664 --- [           main] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+INFO: Sentinel log output type is: file
+INFO: Sentinel log charset is: utf-8
+INFO: Sentinel log base directory is: C:\Users\wcc\logs\csp\
+INFO: Sentinel log name use pid is: false
+INFO: Sentinel log level is: INFO
+2026-04-18 16:23:55.720  INFO 122664 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-04-18 16:23:55.892  INFO 122664 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure EndpointRequestMatcher includes=[*], excludes=[], includeLinks=true with [org.springframework.security.web.session.DisableEncodeUrlFilter@383a7eda, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11ac7006, org.springframework.security.web.context.SecurityContextHolderFilter@1398ca52, org.springframework.security.web.header.HeaderWriterFilter@467305e6, org.springframework.web.filter.CorsFilter@e08d871, org.springframework.security.web.authentication.logout.LogoutFilter@679f3c39, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@63c3a3c2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f82f761, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c29036e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@795cc88d, org.springframework.security.web.access.ExceptionTranslationFilter@d6da477, org.springframework.security.web.access.intercept.AuthorizationFilter@7a5773a]
+2026-04-18 16:23:58.031  INFO 122664 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2026-04-18 16:23:58.256  INFO 122664 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8888"]
+2026-04-18 16:23:58.265  INFO 122664 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8888 (http) with context path '/'
+2026-04-18 16:23:58.268  INFO 122664 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2026-04-18 16:23:58.311  INFO 122664 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#6c37c36:0/SimpleConnection@760cdf95 [delegate=amqp://guest@127.0.0.1:5672/novel, localPort=64634]
+2026-04-18 16:23:58.371  INFO 122664 --- [           main] i.github.xxyopen.novel.NovelApplication  : Started NovelApplication in 12.204 seconds (process running for 12.732)
+2026-04-18 16:23:58.380 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 16:23:58.381 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 16:23:58.385 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 16:23:58.386  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 16:23:58.420  INFO 122664 --- [           main] i.github.xxyopen.novel.NovelApplication  : 加载了如下缓存管理器：
+2026-04-18 16:23:58.421  INFO 122664 --- [           main] i.github.xxyopen.novel.NovelApplication  : caffeineCacheManager:org.springframework.cache.support.SimpleCacheManager
+2026-04-18 16:23:58.421  INFO 122664 --- [           main] i.github.xxyopen.novel.NovelApplication  : 缓存：[homeBookCache, latestNewsCache, bookNewestRankCache, bookUpdateRankCache, bookCategoryListCache, bookInfoCache, bookChapterCache, lastUpdateBookIdListCache]
+2026-04-18 16:23:58.421  INFO 122664 --- [           main] i.github.xxyopen.novel.NovelApplication  : redisCacheManager:org.springframework.data.redis.cache.RedisCacheManager
+2026-04-18 16:23:58.421  INFO 122664 --- [           main] i.github.xxyopen.novel.NovelApplication  : 缓存：[bookVisitRankCache, homeFriendLinkCache, bookContentCache, userInfoCache, authorInfoCache]
+2026-04-18 16:23:58.421  INFO 122664 --- [           main] i.github.xxyopen.novel.NovelApplication  : 创建连接池...
+2026-04-18 16:23:58.421  INFO 122664 --- [           main] i.github.xxyopen.novel.NovelApplication  : 最小空闲连接数：10
+2026-04-18 16:23:58.421  INFO 122664 --- [           main] i.github.xxyopen.novel.NovelApplication  : 最大连接数：10
+2026-04-18 16:23:58.421  INFO 122664 --- [           main] i.github.xxyopen.novel.NovelApplication  : 创建连接池完成.
+2026-04-18 16:23:58.422  INFO 122664 --- [           main] i.github.xxyopen.novel.NovelApplication  : 数据库：MySQL
+2026-04-18 16:23:58.422  INFO 122664 --- [           main] i.github.xxyopen.novel.NovelApplication  : 数据库版本：8.4.7
+2026-04-18 16:27:17.458  INFO 122664 --- [nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-18 16:27:17.458  INFO 122664 --- [nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-18 16:27:17.459  INFO 122664 --- [nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-18 16:27:17.498 TRACE 122664 --- [nio-8888-exec-1] org.zalando.logbook.Logbook              : Incoming Request: d89ce9ffe8533093
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8888/api/front/home/books HTTP/1.1
+connection: Keep-Alive
+host: localhost:8888
+2026-04-18 16:27:17.550 DEBUG 122664 --- [nio-8888-exec-1] i.g.x.n.controller.front.HomeController  : 处理请求的线程：Thread[http-nio-8888-exec-1,5,main]
+2026-04-18 16:27:17.569 DEBUG 122664 --- [nio-8888-exec-1] i.g.x.n.d.m.HomeBookMapper.selectList    : ==>  Preparing: SELECT id,type,sort,book_id,create_time,update_time FROM home_book ORDER BY sort ASC
+2026-04-18 16:27:17.570 DEBUG 122664 --- [nio-8888-exec-1] i.g.x.n.d.m.HomeBookMapper.selectList    : ==> Parameters: 
+2026-04-18 16:27:17.571 DEBUG 122664 --- [nio-8888-exec-1] i.g.x.n.d.m.HomeBookMapper.selectList    : <==      Total: 0
+2026-04-18 16:27:17.627 TRACE 122664 --- [nio-8888-exec-1] org.zalando.logbook.Logbook              : Outgoing Response: d89ce9ffe8533093
+Duration: 128 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json
+Date: Sat, 18 Apr 2026 08:27:17 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":[],"ok":true}
+2026-04-18 16:27:17.683 TRACE 122664 --- [nio-8888-exec-2] org.zalando.logbook.Logbook              : Incoming Request: be9f9b73109a0663
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:8888/api/front/ai/search HTTP/1.1
+content-length: 27
+content-type: application/json
+expect: 100-continue
+host: localhost:8888
+
+{"query":"修仙","topK":5}
+2026-04-18 16:27:19.922 TRACE 122664 --- [nio-8888-exec-2] org.zalando.logbook.Logbook              : Outgoing Response: be9f9b73109a0663
+Duration: 2243 ms
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 18 Apr 2026 08:27:19 GMT
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":[],"ok":true}
+2026-04-18 16:28:58.376 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 16:28:58.376 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 16:28:58.377 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 16:28:58.378  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 16:33:58.384 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 16:33:58.385 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 16:33:58.387 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 16:33:58.388  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 16:38:58.385 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 16:38:58.385 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 16:38:58.386 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 16:38:58.387  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 16:43:58.377 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 16:43:58.378 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 16:43:58.379 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 16:43:58.380  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 16:48:58.380 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 16:48:58.381 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 16:48:58.382 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 16:48:58.382  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 16:53:58.371 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 16:53:58.372 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 16:53:58.374 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 16:53:58.374  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 16:58:58.372 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 16:58:58.373 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 16:58:58.375 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 16:58:58.376  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 17:03:58.380 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 17:03:58.381 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 17:03:58.383 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 17:03:58.383  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 17:08:58.380 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 17:08:58.381 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 17:08:58.383 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 17:08:58.383  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 17:13:58.379 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 17:13:58.380 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 17:13:58.381 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 17:13:58.381  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 17:18:58.381 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 17:18:58.382 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 17:18:58.383 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 17:18:58.383  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 17:23:58.381 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 17:23:58.381 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 17:23:58.383 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 17:23:58.384  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 17:28:58.381 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 17:28:58.383 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 17:28:58.385 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 17:28:58.387  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 17:33:12.098 TRACE 122664 --- [nio-8888-exec-3] org.zalando.logbook.Logbook              : Incoming Request: bf7acfa73517d731
+Remote: 127.0.0.1
+GET http://127.0.0.1:8888/api/front/book/visit_rank HTTP/1.1
+accept: application/json, text/plain, */*
+accept-encoding: gzip, deflate, br, zstd
+accept-language: zh-CN,zh;q=0.9
+authorization: XXX
+connection: keep-alive
+host: 127.0.0.1:8888
+origin: http://localhost:1024
+referer: http://localhost:1024/
+sec-ch-ua: "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+sec-fetch-storage-access: active
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+x-requested-with: XMLHttpRequest
+2026-04-18 17:33:12.098 TRACE 122664 --- [nio-8888-exec-1] org.zalando.logbook.Logbook              : Incoming Request: b7567639f0e7dbe5
+Remote: 127.0.0.1
+GET http://127.0.0.1:8888/api/front/home/friend_Link/list HTTP/1.1
+accept: application/json, text/plain, */*
+accept-encoding: gzip, deflate, br, zstd
+accept-language: zh-CN,zh;q=0.9
+authorization: XXX
+connection: keep-alive
+host: 127.0.0.1:8888
+origin: http://localhost:1024
+referer: http://localhost:1024/
+sec-ch-ua: "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+sec-fetch-storage-access: active
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+x-requested-with: XMLHttpRequest
+2026-04-18 17:33:12.098 TRACE 122664 --- [nio-8888-exec-2] org.zalando.logbook.Logbook              : Incoming Request: e75d7bf48990d061
+Remote: 127.0.0.1
+GET http://127.0.0.1:8888/api/front/book/update_rank HTTP/1.1
+accept: application/json, text/plain, */*
+accept-encoding: gzip, deflate, br, zstd
+accept-language: zh-CN,zh;q=0.9
+authorization: XXX
+connection: keep-alive
+host: 127.0.0.1:8888
+origin: http://localhost:1024
+referer: http://localhost:1024/
+sec-ch-ua: "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+sec-fetch-storage-access: active
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+x-requested-with: XMLHttpRequest
+2026-04-18 17:33:12.099 TRACE 122664 --- [io-8888-exec-10] org.zalando.logbook.Logbook              : Incoming Request: db5eadc653a1c740
+Remote: 127.0.0.1
+GET http://127.0.0.1:8888/api/front/home/books HTTP/1.1
+accept: application/json, text/plain, */*
+accept-encoding: gzip, deflate, br, zstd
+accept-language: zh-CN,zh;q=0.9
+authorization: XXX
+connection: keep-alive
+host: 127.0.0.1:8888
+origin: http://localhost:1024
+referer: http://localhost:1024/
+sec-ch-ua: "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+sec-fetch-storage-access: active
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+x-requested-with: XMLHttpRequest
+2026-04-18 17:33:12.099 TRACE 122664 --- [nio-8888-exec-8] org.zalando.logbook.Logbook              : Incoming Request: e56cdaf8c865553f
+Remote: 127.0.0.1
+GET http://127.0.0.1:8888/api/front/book/newest_rank HTTP/1.1
+accept: application/json, text/plain, */*
+accept-encoding: gzip, deflate, br, zstd
+accept-language: zh-CN,zh;q=0.9
+authorization: XXX
+connection: keep-alive
+host: 127.0.0.1:8888
+origin: http://localhost:1024
+referer: http://localhost:1024/
+sec-ch-ua: "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+sec-fetch-storage-access: active
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+x-requested-with: XMLHttpRequest
+2026-04-18 17:33:12.099 TRACE 122664 --- [nio-8888-exec-9] org.zalando.logbook.Logbook              : Incoming Request: 8bdd7985b8c403ab
+Remote: 127.0.0.1
+GET http://127.0.0.1:8888/api/front/news/latest_list HTTP/1.1
+accept: application/json, text/plain, */*
+accept-encoding: gzip, deflate, br, zstd
+accept-language: zh-CN,zh;q=0.9
+authorization: XXX
+connection: keep-alive
+host: 127.0.0.1:8888
+origin: http://localhost:1024
+referer: http://localhost:1024/
+sec-ch-ua: "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+sec-fetch-storage-access: active
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+x-requested-with: XMLHttpRequest
+2026-04-18 17:33:12.104 DEBUG 122664 --- [io-8888-exec-10] i.g.x.n.controller.front.HomeController  : 处理请求的线程：Thread[http-nio-8888-exec-10,5,main]
+2026-04-18 17:33:12.109 DEBUG 122664 --- [nio-8888-exec-9] i.g.x.n.d.m.NewsInfoMapper.selectList    : ==>  Preparing: SELECT id,category_id,category_name,source_name,title,create_time,update_time FROM news_info ORDER BY create_time DESC limit 2
+2026-04-18 17:33:12.110 DEBUG 122664 --- [nio-8888-exec-9] i.g.x.n.d.m.NewsInfoMapper.selectList    : ==> Parameters: 
+2026-04-18 17:33:12.111 DEBUG 122664 --- [nio-8888-exec-9] i.g.x.n.d.m.NewsInfoMapper.selectList    : <==      Total: 0
+2026-04-18 17:33:12.117 TRACE 122664 --- [io-8888-exec-10] org.zalando.logbook.Logbook              : Outgoing Response: db5eadc653a1c740
+Duration: 19 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: http://localhost:1024
+Connection: keep-alive
+Content-Type: application/json
+Date: Sat, 18 Apr 2026 09:33:12 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":[],"ok":true}
+2026-04-18 17:33:12.118 DEBUG 122664 --- [nio-8888-exec-2] i.g.x.n.d.m.BookInfoMapper.selectList    : ==>  Preparing: SELECT id,work_direction,category_id,category_name,pic_url,book_name,author_id,author_name,book_desc,score,book_status,visit_count,word_count,comment_count,last_chapter_id,last_chapter_name,last_chapter_update_time,is_vip,create_time,update_time FROM book_info WHERE (word_count > ? AND word_count > ?) ORDER BY update_time DESC limit 30
+2026-04-18 17:33:12.118 DEBUG 122664 --- [nio-8888-exec-8] i.g.x.n.d.m.BookInfoMapper.selectList    : ==>  Preparing: SELECT id,work_direction,category_id,category_name,pic_url,book_name,author_id,author_name,book_desc,score,book_status,visit_count,word_count,comment_count,last_chapter_id,last_chapter_name,last_chapter_update_time,is_vip,create_time,update_time FROM book_info WHERE (word_count > ? AND word_count > ?) ORDER BY create_time DESC limit 30
+2026-04-18 17:33:12.119 TRACE 122664 --- [nio-8888-exec-9] org.zalando.logbook.Logbook              : Outgoing Response: 8bdd7985b8c403ab
+Duration: 20 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: http://localhost:1024
+Connection: keep-alive
+Content-Type: application/json
+Date: Sat, 18 Apr 2026 09:33:12 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":[],"ok":true}
+2026-04-18 17:33:12.119 DEBUG 122664 --- [nio-8888-exec-8] i.g.x.n.d.m.BookInfoMapper.selectList    : ==> Parameters: 0(Integer), 0(Integer)
+2026-04-18 17:33:12.119 DEBUG 122664 --- [nio-8888-exec-2] i.g.x.n.d.m.BookInfoMapper.selectList    : ==> Parameters: 0(Integer), 0(Integer)
+2026-04-18 17:33:12.122 DEBUG 122664 --- [nio-8888-exec-8] i.g.x.n.d.m.BookInfoMapper.selectList    : <==      Total: 0
+2026-04-18 17:33:12.122 DEBUG 122664 --- [nio-8888-exec-2] i.g.x.n.d.m.BookInfoMapper.selectList    : <==      Total: 0
+2026-04-18 17:33:12.125 TRACE 122664 --- [nio-8888-exec-2] org.zalando.logbook.Logbook              : Outgoing Response: e75d7bf48990d061
+Duration: 26 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: http://localhost:1024
+Connection: keep-alive
+Content-Type: application/json
+Date: Sat, 18 Apr 2026 09:33:12 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":[],"ok":true}
+2026-04-18 17:33:12.125 TRACE 122664 --- [nio-8888-exec-8] org.zalando.logbook.Logbook              : Outgoing Response: e56cdaf8c865553f
+Duration: 26 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: http://localhost:1024
+Connection: keep-alive
+Content-Type: application/json
+Date: Sat, 18 Apr 2026 09:33:12 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":[],"ok":true}
+2026-04-18 17:33:12.149 TRACE 122664 --- [nio-8888-exec-1] org.zalando.logbook.Logbook              : Outgoing Response: b7567639f0e7dbe5
+Duration: 51 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: http://localhost:1024
+Connection: keep-alive
+Content-Type: application/json
+Date: Sat, 18 Apr 2026 09:33:12 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":[],"ok":true}
+2026-04-18 17:33:12.149 TRACE 122664 --- [nio-8888-exec-3] org.zalando.logbook.Logbook              : Outgoing Response: bf7acfa73517d731
+Duration: 51 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: http://localhost:1024
+Connection: keep-alive
+Content-Type: application/json
+Date: Sat, 18 Apr 2026 09:33:12 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":[],"ok":true}
+2026-04-18 17:33:22.181 TRACE 122664 --- [nio-8888-exec-5] org.zalando.logbook.Logbook              : Incoming Request: 9530d0c00784acaf
+Remote: 127.0.0.1
+GET http://127.0.0.1:8888/api/author/ai/characters HTTP/1.1
+accept: application/json, text/plain, */*
+accept-encoding: gzip, deflate, br, zstd
+accept-language: zh-CN,zh;q=0.9
+authorization: XXX
+connection: keep-alive
+host: 127.0.0.1:8888
+origin: http://localhost:1024
+referer: http://localhost:1024/
+sec-ch-ua: "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+sec-fetch-storage-access: active
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+x-requested-with: XMLHttpRequest
+2026-04-18 17:33:22.181 TRACE 122664 --- [nio-8888-exec-7] org.zalando.logbook.Logbook              : Incoming Request: b596fa53047136e0
+Remote: 127.0.0.1
+GET http://127.0.0.1:8888/api/author/ai/sessions?sessionType=0 HTTP/1.1
+accept: application/json, text/plain, */*
+accept-encoding: gzip, deflate, br, zstd
+accept-language: zh-CN,zh;q=0.9
+authorization: XXX
+connection: keep-alive
+host: 127.0.0.1:8888
+origin: http://localhost:1024
+referer: http://localhost:1024/
+sec-ch-ua: "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+sec-fetch-storage-access: active
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+x-requested-with: XMLHttpRequest
+2026-04-18 17:33:22.239  WARN 122664 --- [nio-8888-exec-5] i.g.xxyopen.novel.core.util.JwtUtils     : JWT解析失败:null
+2026-04-18 17:33:22.239  WARN 122664 --- [nio-8888-exec-7] i.g.xxyopen.novel.core.util.JwtUtils     : JWT解析失败:null
+2026-04-18 17:33:22.241 TRACE 122664 --- [nio-8888-exec-7] org.zalando.logbook.Logbook              : Outgoing Response: b596fa53047136e0
+Duration: 59 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: http://localhost:1024
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Sat, 18 Apr 2026 09:33:22 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"A0230","message":"用户登录已过期","data":null,"ok":false}
+2026-04-18 17:33:22.241 TRACE 122664 --- [nio-8888-exec-5] org.zalando.logbook.Logbook              : Outgoing Response: 9530d0c00784acaf
+Duration: 60 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: http://localhost:1024
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Sat, 18 Apr 2026 09:33:22 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"A0230","message":"用户登录已过期","data":null,"ok":false}
+2026-04-18 17:33:58.385 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 17:33:58.386 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 17:33:58.388 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 17:33:58.388  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 17:38:58.380 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 17:38:58.380 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 17:38:58.382 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 17:38:58.383  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 17:43:58.375 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 17:43:58.376 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 17:43:58.377 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 17:43:58.378  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 17:48:58.383 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 17:48:58.384 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 17:48:58.385 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 17:48:58.385  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 17:53:58.382 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 17:53:58.383 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 17:53:58.387 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 17:53:58.387  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 17:58:58.386 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 17:58:58.386 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 17:58:58.388 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 17:58:58.388  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 18:03:58.372 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 18:03:58.373 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 18:03:58.376 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 18:03:58.376  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 18:08:58.374 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 18:08:58.375 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 18:08:58.377 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 18:08:58.377  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 18:13:58.377 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 18:13:58.378 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 18:13:58.380 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 18:13:58.380  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 18:18:58.372 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 18:18:58.372 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 18:18:58.374 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 18:18:58.375  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 18:23:58.380 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 18:23:58.381 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 18:23:58.386 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 18:23:58.386  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 18:28:58.385 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 18:28:58.386 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 18:28:58.387 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 18:28:58.388  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 18:33:58.375 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 18:33:58.425 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 18:33:58.426 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 18:33:58.427  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 18:38:58.377 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 18:38:58.378 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 18:38:58.380 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 18:38:58.381  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 18:43:58.376 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 18:43:58.377 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 18:43:58.378 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 18:43:58.378  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 18:48:58.376 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 18:48:58.376 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 18:48:58.377 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 18:48:58.378  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 18:53:58.380 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 18:53:58.381 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 18:53:58.394 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 18:53:58.394  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 18:58:58.373 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 18:58:58.373 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 18:58:58.375 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 18:58:58.377  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 19:03:58.381 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 19:03:58.381 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 19:03:58.383 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 19:03:58.384  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 19:08:58.377 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 19:08:58.378 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 19:08:58.379 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 19:08:58.379  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 19:13:58.376 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 19:13:58.377 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 19:13:58.378 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 19:13:58.379  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 19:18:58.377 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 19:18:58.378 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 19:18:58.379 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 19:18:58.380  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 19:23:58.375 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 19:23:58.376 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 19:23:58.379 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 19:23:58.379  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 19:28:58.386 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 19:28:58.387 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 19:28:58.389 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 19:28:58.389  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 19:33:58.380 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 19:33:58.381 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 19:33:58.382 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 19:33:58.383  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 19:38:58.375 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 19:38:58.376 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 19:38:58.377 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 19:38:58.378  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 19:43:58.384 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 19:43:58.384 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 19:43:58.386 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 19:43:58.386  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 19:48:58.384 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 19:48:58.384 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 19:48:58.386 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 19:48:58.387  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 19:53:58.382 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 19:53:58.383 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 19:53:58.385 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 19:53:58.386  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 19:58:58.377 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 19:58:58.377 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 19:58:58.380 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 19:58:58.380  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 20:03:55.086 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 20:03:55.087 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 20:03:55.088 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 20:03:55.089  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 20:08:55.081 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 20:08:55.082 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 20:08:55.083 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 20:08:55.084  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 20:13:55.081 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 20:13:55.082 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 20:13:55.083 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 20:13:55.084  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 20:18:40.194 TRACE 122664 --- [nio-8888-exec-3] org.zalando.logbook.Logbook              : Incoming Request: 988fb7d0dbacb494
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8888/swagger-ui.html HTTP/1.1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+accept-encoding: gzip, deflate, br, zstd
+accept-language: zh-CN,zh;q=0.9
+connection: keep-alive
+host: localhost:8888
+sec-ch-ua: "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: none
+sec-fetch-user: ?1
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+2026-04-18 20:18:40.617 TRACE 122664 --- [nio-8888-exec-3] org.zalando.logbook.Logbook              : Outgoing Response: 988fb7d0dbacb494
+Duration: 422 ms
+HTTP/1.1 302 Found
+Connection: keep-alive
+Date: Sat, 18 Apr 2026 12:18:40 GMT
+Keep-Alive: timeout=60
+Location: /swagger-ui/index.html
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+2026-04-18 20:18:42.364  INFO 122664 --- [nio-8888-exec-4] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1074 ms
+2026-04-18 20:18:55.088 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 20:18:55.088 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 20:18:55.089 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 20:18:55.089  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 20:23:55.090 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 20:23:55.090 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 20:23:55.091 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 20:23:55.092  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 20:28:55.076 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 20:28:55.077 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 20:28:55.078 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 20:28:55.079  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 20:33:55.076 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 20:33:55.078 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 20:33:55.079 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 20:33:55.079  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 20:38:55.078 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 20:38:55.079 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 20:38:55.081 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 20:38:55.082  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 20:43:55.076 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==>  Preparing: SELECT id,word,category,level,is_enabled,create_time FROM audit_sensitive_word
+2026-04-18 20:43:55.077 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : ==> Parameters: 
+2026-04-18 20:43:55.078 DEBUG 122664 --- [   scheduling-1] i.g.x.n.d.m.A.selectList                 : <==      Total: 14
+2026-04-18 20:43:55.078  INFO 122664 --- [   scheduling-1] i.g.x.n.core.audit.SensitiveWordFilter   : 敏感词库加载完成，共 14 个
+2026-04-18 20:44:55.499 TRACE 122664 --- [nio-8888-exec-1] org.zalando.logbook.Logbook              : Incoming Request: 8a3d1fba0d331d4d
+Remote: 127.0.0.1
+GET http://127.0.0.1:8888/api/front/news/latest_list HTTP/1.1
+accept: application/json, text/plain, */*
+accept-encoding: gzip, deflate, br, zstd
+accept-language: zh-CN,zh;q=0.9
+authorization: XXX
+connection: keep-alive
+host: 127.0.0.1:8888
+origin: http://localhost:1024
+referer: http://localhost:1024/
+sec-ch-ua: "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+sec-fetch-storage-access: active
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+x-requested-with: XMLHttpRequest
+2026-04-18 20:44:55.499 TRACE 122664 --- [nio-8888-exec-2] org.zalando.logbook.Logbook              : Incoming Request: ccea8b388f5df665
+Remote: 127.0.0.1
+GET http://127.0.0.1:8888/api/front/book/update_rank HTTP/1.1
+accept: application/json, text/plain, */*
+accept-encoding: gzip, deflate, br, zstd
+accept-language: zh-CN,zh;q=0.9
+authorization: XXX
+connection: keep-alive
+host: 127.0.0.1:8888
+origin: http://localhost:1024
+referer: http://localhost:1024/
+sec-ch-ua: "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+sec-fetch-storage-access: active
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+x-requested-with: XMLHttpRequest
+2026-04-18 20:44:55.499 TRACE 122664 --- [nio-8888-exec-3] org.zalando.logbook.Logbook              : Incoming Request: 8f7525258c3a0fdc
+Remote: 127.0.0.1
+GET http://127.0.0.1:8888/api/front/book/visit_rank HTTP/1.1
+accept: application/json, text/plain, */*
+accept-encoding: gzip, deflate, br, zstd
+accept-language: zh-CN,zh;q=0.9
+authorization: XXX
+connection: keep-alive
+host: 127.0.0.1:8888
+origin: http://localhost:1024
+referer: http://localhost:1024/
+sec-ch-ua: "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+sec-fetch-storage-access: active
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+x-requested-with: XMLHttpRequest
+2026-04-18 20:44:55.499 TRACE 122664 --- [io-8888-exec-10] org.zalando.logbook.Logbook              : Incoming Request: dd6164a882ec9776
+Remote: 127.0.0.1
+GET http://127.0.0.1:8888/api/front/book/newest_rank HTTP/1.1
+accept: application/json, text/plain, */*
+accept-encoding: gzip, deflate, br, zstd
+accept-language: zh-CN,zh;q=0.9
+authorization: XXX
+connection: keep-alive
+host: 127.0.0.1:8888
+origin: http://localhost:1024
+referer: http://localhost:1024/
+sec-ch-ua: "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+sec-fetch-storage-access: active
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+x-requested-with: XMLHttpRequest
+2026-04-18 20:44:55.500 TRACE 122664 --- [nio-8888-exec-8] org.zalando.logbook.Logbook              : Incoming Request: d4f4dbc4d3019ef1
+Remote: 127.0.0.1
+GET http://127.0.0.1:8888/api/front/home/books HTTP/1.1
+accept: application/json, text/plain, */*
+accept-encoding: gzip, deflate, br, zstd
+accept-language: zh-CN,zh;q=0.9
+authorization: XXX
+connection: keep-alive
+host: 127.0.0.1:8888
+origin: http://localhost:1024
+referer: http://localhost:1024/
+sec-ch-ua: "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+sec-fetch-storage-access: active
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+x-requested-with: XMLHttpRequest
+2026-04-18 20:44:55.500 TRACE 122664 --- [nio-8888-exec-7] org.zalando.logbook.Logbook              : Incoming Request: a51d786f2991aced
+Remote: 127.0.0.1
+GET http://127.0.0.1:8888/api/front/home/friend_Link/list HTTP/1.1
+accept: application/json, text/plain, */*
+accept-encoding: gzip, deflate, br, zstd
+accept-language: zh-CN,zh;q=0.9
+authorization: XXX
+connection: keep-alive
+host: 127.0.0.1:8888
+origin: http://localhost:1024
+referer: http://localhost:1024/
+sec-ch-ua: "Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+sec-fetch-storage-access: active
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+x-requested-with: XMLHttpRequest
+2026-04-18 20:44:55.505 DEBUG 122664 --- [nio-8888-exec-8] i.g.x.n.controller.front.HomeController  : 处理请求的线程：Thread[http-nio-8888-exec-8,5,main]
+2026-04-18 20:44:55.505 DEBUG 122664 --- [nio-8888-exec-1] i.g.x.n.d.m.NewsInfoMapper.selectList    : ==>  Preparing: SELECT id,category_id,category_name,source_name,title,create_time,update_time FROM news_info ORDER BY create_time DESC limit 2
+2026-04-18 20:44:55.506 DEBUG 122664 --- [nio-8888-exec-2] i.g.x.n.d.m.BookInfoMapper.selectList    : ==>  Preparing: SELECT id,work_direction,category_id,category_name,pic_url,book_name,author_id,author_name,book_desc,score,book_status,visit_count,word_count,comment_count,last_chapter_id,last_chapter_name,last_chapter_update_time,is_vip,create_time,update_time FROM book_info WHERE (word_count > ? AND word_count > ?) ORDER BY update_time DESC limit 30
+2026-04-18 20:44:55.506 DEBUG 122664 --- [nio-8888-exec-1] i.g.x.n.d.m.NewsInfoMapper.selectList    : ==> Parameters: 
+2026-04-18 20:44:55.506 DEBUG 122664 --- [io-8888-exec-10] i.g.x.n.d.m.BookInfoMapper.selectList    : ==>  Preparing: SELECT id,work_direction,category_id,category_name,pic_url,book_name,author_id,author_name,book_desc,score,book_status,visit_count,word_count,comment_count,last_chapter_id,last_chapter_name,last_chapter_update_time,is_vip,create_time,update_time FROM book_info WHERE (word_count > ? AND word_count > ?) ORDER BY create_time DESC limit 30
+2026-04-18 20:44:55.507 DEBUG 122664 --- [io-8888-exec-10] i.g.x.n.d.m.BookInfoMapper.selectList    : ==> Parameters: 0(Integer), 0(Integer)
+2026-04-18 20:44:55.507 DEBUG 122664 --- [nio-8888-exec-2] i.g.x.n.d.m.BookInfoMapper.selectList    : ==> Parameters: 0(Integer), 0(Integer)
+2026-04-18 20:44:55.507 TRACE 122664 --- [nio-8888-exec-8] org.zalando.logbook.Logbook              : Outgoing Response: d4f4dbc4d3019ef1
+Duration: 5 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: http://localhost:1024
+Connection: keep-alive
+Content-Type: application/json
+Date: Sat, 18 Apr 2026 12:44:55 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":[],"ok":true}
+2026-04-18 20:44:55.507 DEBUG 122664 --- [nio-8888-exec-1] i.g.x.n.d.m.NewsInfoMapper.selectList    : <==      Total: 0
+2026-04-18 20:44:55.509 DEBUG 122664 --- [io-8888-exec-10] i.g.x.n.d.m.BookInfoMapper.selectList    : <==      Total: 0
+2026-04-18 20:44:55.509 DEBUG 122664 --- [nio-8888-exec-2] i.g.x.n.d.m.BookInfoMapper.selectList    : <==      Total: 0
+2026-04-18 20:44:55.511 TRACE 122664 --- [nio-8888-exec-2] org.zalando.logbook.Logbook              : Outgoing Response: ccea8b388f5df665
+Duration: 10 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: http://localhost:1024
+Connection: keep-alive
+Content-Type: application/json
+Date: Sat, 18 Apr 2026 12:44:55 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":[],"ok":true}
+2026-04-18 20:44:55.511 TRACE 122664 --- [nio-8888-exec-1] org.zalando.logbook.Logbook              : Outgoing Response: 8a3d1fba0d331d4d
+Duration: 12 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: http://localhost:1024
+Connection: keep-alive
+Content-Type: application/json
+Date: Sat, 18 Apr 2026 12:44:55 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":[],"ok":true}
+2026-04-18 20:44:55.511 TRACE 122664 --- [io-8888-exec-10] org.zalando.logbook.Logbook              : Outgoing Response: dd6164a882ec9776
+Duration: 10 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: http://localhost:1024
+Connection: keep-alive
+Content-Type: application/json
+Date: Sat, 18 Apr 2026 12:44:55 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":[],"ok":true}
+2026-04-18 20:44:55.515 TRACE 122664 --- [nio-8888-exec-7] org.zalando.logbook.Logbook              : Outgoing Response: a51d786f2991aced
+Duration: 15 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: http://localhost:1024
+Connection: keep-alive
+Content-Type: application/json
+Date: Sat, 18 Apr 2026 12:44:55 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":[],"ok":true}
+2026-04-18 20:44:55.515 TRACE 122664 --- [nio-8888-exec-3] org.zalando.logbook.Logbook              : Outgoing Response: 8f7525258c3a0fdc
+Duration: 16 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: http://localhost:1024
+Connection: keep-alive
+Content-Type: application/json
+Date: Sat, 18 Apr 2026 12:44:55 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":"00000","message":"一切 ok","data":[],"ok":true}
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  04:23 h
+[INFO] Finished at: 2026-04-18T20:46:29+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.3.0:run (default-cli) on project novel: Process terminated with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
